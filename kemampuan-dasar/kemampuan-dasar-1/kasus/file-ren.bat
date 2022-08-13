@@ -1,42 +1,55 @@
-@echo OFF
+@echo off
+title PGT KASUS CARI FILE JAVA
 
-cd D:\PGT\Coding-PGT\kemampuan-dasar\kemampuan-dasar-1\kasus
-DIR *.java
+cls
 echo.
-echo Ada file Java pada direktori D:\PGT\Coding-PGT\kemampuan-dasar\kemampuan-dasar-1\kasus
-
-:choice
-echo.
-echo pilih (y) untuk mengubah nama file, dan (t) untuk keluar
-set choice=
-set /p choice="sample-java.java Ada, ingin mengubah nama file (y/t) ? "
-
-if %choice% == y (
-   
-    echo.
-    set /p input="Masukan nama file baru : " 
-    
-    echo.
-    GOTO rename
-
-
-) else if %choice% == t (
-echo.
-    echo Anda tidak jadi mengubah nama file
-    PAUSE
-    EXIT
-
-
-) else (
-    echo pilih y, atau t
-    GOTO choice
+for /f "tokens=*" %%I in ('dir /b /s *.java') do (
+if exist dir /b /s *.java (
+echo msgbox "Ada File Java Pada Direktori" > "%temp%\popup.vbs"
+wscript.exe "%temp%\popup.vbs"
+echo %%I
+goto pilihan
+)
+)
+if %errorlevel% == 0 (
+echo msgbox "Tidak Ada File Java Pada Direktori" > "%temp%\popup.vbs"
+wscript.exe "%temp%\popup.vbs"
+goto exit
+)
 )
 
-:rename
-cd D:\PGT\Coding-PGT\kemampuan-dasar\kemampuan-dasar-1\kasus
-ren "D:\PGT\Coding-PGT\kemampuan-dasar\kemampuan-dasar-1\kasus\*.java" "%input%.java"
+:pilihan
 echo.
-echo BERHASIL MENGUBAH NAMA FILE
+echo pilih (y) untuk mengubah nama file, dan (N) untuk keluar
+set/p "pil= ->  Apakah anda ingin mengganti nama file (Y/N) ? :"
+echo.
+if %pil%==Y (
+set /p input="Masukan nama file baru : "
+goto rename
+)
+if %pil%==N goto norename
+if %pil%==y  (
+set /p input="Masukan nama file baru : "
+goto rename
+)
+if %pil%==n goto norename
 
-PAUSE > nul
-EXIT
+:rename
+echo.
+for /f "tokens=*" %%I in ('dir /b /s *.java') do ren "%%~I" "%input%.java"
+echo msgbox "Rename berhasil" > "%temp%\popup.vbs"
+wscript.exe "%temp%\popup.vbs"
+echo.
+for /f "tokens=*" %%I in ('dir /b /s *.java') do (
+echo %%I
+)
+echo.
+pause
+exit
+
+:norename
+echo.
+echo msgbox "Rename tidak berhasil" > "%temp%\popup.vbs"
+wscript.exe "%temp%\popup.vbs"
+pause
+exit
