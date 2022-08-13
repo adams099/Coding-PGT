@@ -1,0 +1,2051 @@
+1) ipconfig untuk menampilkan konfigurasi IP komputer
+
+C:\WINDOWS\system32>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 5:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 14:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 15:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi 2:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::481f:dc63:5c94:843d%4
+   IPv4 Address. . . . . . . . . . . : 192.168.0.104
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+
+============================================================================================================
+2) color untuk mengubah warna latar dan juga teks
+
+C:\WINDOWS\system32>color 2
+
+============================================================================================================
+3) chkdsk /r mendeteksi dan menemukan bad sector dan mencoba memulihkan informasi
+
+C:\WINDOWS\system32>chkdsk d: /r
+The type of the file system is NTFS.
+Volume label is DATA.
+
+Stage 1: Examining basic file system structure ...
+  43776 file records processed.
+File verification completed.
+ Phase duration (File record verification): 1.81 seconds.
+  5 large file records processed.
+ Phase duration (Orphan file record recovery): 0.00 milliseconds.
+  0 bad file records processed.
+ Phase duration (Bad file record checking): 1.45 milliseconds.
+
+Stage 2: Examining file name linkage ...
+  4713 reparse records processed.
+  47476 index entries processed.
+Index verification completed.
+ Phase duration (Index verification): 5.59 seconds.
+  0 unindexed files scanned.
+ Phase duration (Orphan reconnection): 10.09 milliseconds.
+  0 unindexed files recovered to lost and found.
+ Phase duration (Orphan recovery to lost and found): 1.73 milliseconds.
+  4713 reparse records processed.
+ Phase duration (Reparse point and Object ID verification): 29.76 milliseconds.
+
+Stage 3: Examining security descriptors ...
+Security descriptor verification completed.
+ Phase duration (Security descriptor verification): 36.51 milliseconds.
+  1851 data files processed.
+ Phase duration (Data attribute verification): 1.95 milliseconds.
+CHKDSK is verifying Usn Journal...
+  29345112 USN bytes processed.
+Usn Journal verification completed.
+ Phase duration (USN journal verification): 335.87 milliseconds.
+
+Stage 4: Looking for bad clusters in user file data ...
+  43760 files processed.
+File data verification completed.
+ Phase duration (User file recovery): 1.01 hours.
+
+Stage 5: Looking for bad, free clusters ...
+  121901719 free clusters processed.
+Free space verification is complete.
+ Phase duration (Free space recovery): 0.00 milliseconds.
+
+Windows has scanned the file system and found no problems.
+No further action is required.
+
+ 738039807 KB total disk space.
+ 250261784 KB in 35440 files.
+     10212 KB in 1852 indexes.
+         0 KB in bad sectors.
+    160931 KB in use by the system.
+     65536 KB occupied by the log file.
+ 487606880 KB available on disk.
+
+      4096 bytes in each allocation unit.
+ 184509951 total allocation units on disk.
+ 121901720 allocation units available on disk.
+Total duration: 1.01 hours (3647899 ms).
+
+============================================================================================================
+4) ping pengecekan koneksi di sebuah komputer
+
+C:\WINDOWS\system32>ping google.com
+
+Pinging google.com [74.125.68.113] with 32 bytes of data:
+Reply from 74.125.68.113: bytes=32 time=24ms TTL=106
+Reply from 74.125.68.113: bytes=32 time=25ms TTL=106
+Reply from 74.125.68.113: bytes=32 time=80ms TTL=106
+Reply from 74.125.68.113: bytes=32 time=410ms TTL=106
+
+Ping statistics for 74.125.68.113:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 24ms, Maximum = 410ms, Average = 134ms
+
+============================================================================================================
+5) calc membuka kalkulator
+
+C:\WINDOWS\system32>calc
+
+============================================================================================================
+6) date untuk melihat tanggal/ merubahnya
+
+C:\WINDOWS\system32>date
+The current date is: 11/08/2022
+Enter the new date: (dd-mm-yy)
+
+============================================================================================================
+7) time untuk melihat waktu/ merubahnya
+
+C:\WINDOWS\system32>time
+The current time is: 11:37:48,29
+Enter the new time:
+
+============================================================================================================
+8) echo menampilkan pesan pada layar CMD
+
+C:\WINDOWS\system32>echo
+ECHO is on.
+
+============================================================================================================
+9) help menampilkan fungsi-fungsi pda CMD
+
+C:\WINDOWS\system32>help
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+               current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+               creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+               differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+               associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+               a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+               graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+               directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+               directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+               PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+               path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+               correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+
+For more information on tools see the command-line reference in the online help.
+
+============================================================================================================
+10) ver menampilkan informasi sistem version
+
+C:\WINDOWS\system32>ver
+
+Microsoft Windows [Version 10.0.19043.1586]
+
+============================================================================================================
+11) vol untuk menampilkan label volume drive dan nomor seri volume
+
+C:\WINDOWS\system32>vol
+ Volume in drive C is Windows
+ Volume Serial Number is 146A-666B
+
+============================================================================================================
+12) whoami memeriksa nama user yang menjalankan skrip
+
+C:\WINDOWS\system32>whoami
+laptop-dams\user
+
+============================================================================================================
+13) cmdkey /list melihat daftar username/ password milik user
+
+C:\WINDOWS\system32>cmdkey /list
+
+Currently stored credentials:
+
+    Target: LegacyGeneric:target=MicrosoftAccount:user=adammusyafa009@gmail.com
+    Type: Generic
+    User: adammusyafa009@gmail.com
+    Local machine persistence
+
+    Target: WindowsLive:target=virtualapp/didlogical
+    Type: Generic
+    User: 02fyreqekobcarei
+    Local machine persistence
+
+    Target: LegacyGeneric:target=WhatsApp_Desktop_WIN32/user
+    Type: Generic
+    User: user
+
+============================================================================================================
+14) untuk menampilkan struktur dalam suatu folder
+
+C:\WINDOWS\system32>tree
+Folder PATH listing for volume Windows
+Volume serial number is 146A-666B
+C:.
+├───0409
+├───AdvancedInstallers
+├───am-et
+├───AppLocker
+├───appraiser
+├───ar-SA
+├───bg-BG
+├───Boot
+│   └───en-US
+├───Bthprops
+├───CatRoot
+│   ├───{127D0A1D-4EF2-11D1-8608-00C04FC295EE}
+│   └───{F750E6C3-38EE-11D1-85E5-00C04FC295EE}
+├───catroot2
+│   ├───{127D0A1D-4EF2-11D1-8608-00C04FC295EE}
+│   └───{F750E6C3-38EE-11D1-85E5-00C04FC295EE}
+├───CodeIntegrity
+│   ├───CiPolicies
+│   │   ├───Active
+│   │   ├───Internal
+│   │   └───Staged
+│   └───Tokens
+│       ├───Active
+│       └───Staged
+├───Com
+│   ├───dmp
+│   └───en-US
+├───config
+│   ├───Journal
+│   ├───RegBack
+│   ├───systemprofile
+│   │   └───Contacts
+│   └───TxR
+├───ContainerSettingsProviders
+├───cs-CZ
+├───da-DK
+├───DDFs
+├───de-DE
+├───Dism
+│   └───en-US
+├───downlevel
+├───drivers
+│   ├───DriverData
+│   │   └───Intel
+│   │       └───DPTF
+│   │           ├───cmd
+│   │           ├───dsp
+│   │           ├───dv
+│   │           ├───log
+│   │           └───ui
+│   ├───en-US
+│   ├───etc
+│   ├───UMDF
+│   │   └───en-US
+│   └───wd
+├───DriverState
+│   └───Devices
+├───DriverStore
+│   ├───en-US
+│   ├───FileRepository
+│   │   ├───1394.inf_amd64_a08737ea39f5790b
+│   │   ├───3ware.inf_amd64_408ceed6ec8ab6cd
+│   │   ├───61883.inf_amd64_789f35bee584a939
+│   │   ├───acpi.inf_amd64_605a5cafbbd86f6a
+│   │   ├───acpidev.inf_amd64_0f7f041f33bd01cc
+│   │   ├───acpipagr.inf_amd64_a3248d35e6aba0f3
+│   │   ├───acpipmi.inf_amd64_310dc613a7e31ec8
+│   │   ├───acpitime.inf_amd64_e1498a974ab95ea7
+│   │   ├───acxhdaudiop.inf_amd64_46bea5a3007e37f0
+│   │   ├───adp80xx.inf_amd64_efb36fdc260e8bc8
+│   │   ├───amdgpio2.inf_amd64_808fe94735c4c6b3
+│   │   ├───amdi2c.inf_amd64_d7ae71f8eb52c084
+│   │   ├───amdsata.inf_amd64_ea60132f1a9a7a62
+│   │   ├───amdsbs.inf_amd64_e2a1e49127fb17ef
+│   │   ├───android_winusb.inf_amd64_6dd80ab4a7a0d411
+│   │   │   └───amd64
+│   │   ├───android_winusb.inf_amd64_7036ed8ea7ec0fa9
+│   │   │   └───amd64
+│   │   ├───android_winusb.inf_amd64_bd75d06c56998078
+│   │   │   └───amd64
+│   │   ├───arcsas.inf_amd64_b3d75f82c617ac6a
+│   │   ├───athw8x.inf_amd64_55014eff4ceefbdf
+│   │   ├───audioendpoint.inf_amd64_4fc4a632c1490033
+│   │   ├───avc.inf_amd64_0eaf27d749819837
+│   │   ├───b57nd60a.inf_amd64_77a731ab08be20a5
+│   │   ├───bangolufsenaudiocontrolhsa.inf_amd64_fac9b9d4894595af
+│   │   ├───basicdisplay.inf_amd64_65ab9a260dbf7467
+│   │   ├───basicrender.inf_amd64_df49c4daa6251397
+│   │   ├───battery.inf_amd64_a239bc596073092a
+│   │   ├───bcmdhd64.inf_amd64_e0bae6831f60ea5f
+│   │   ├───bcmfn2.inf_amd64_5ebadf201c5b5845
+│   │   ├───bcmwdidhdpcie.inf_amd64_977dcc915465b0e9
+│   │   ├───bda.inf_amd64_d32fe6b1c2b7b2a5
+│   │   ├───boaudiocontrolhsa.inf_amd64_7d5e6e3eea5d44ab
+│   │   ├───braswellsystem.inf_amd64_c65cd8d15cfc2477
+│   │   ├───btampm.inf_amd64_445ffdc4132cbc59
+│   │   ├───bth.inf_amd64_81928e56856a6cf6
+│   │   ├───bthlcpen.inf_amd64_a2917ed464cbbc93
+│   │   ├───bthleenum.inf_amd64_11f9ff6c12dbf9b5
+│   │   ├───bthmtpenum.inf_amd64_3abc48e730d08fde
+│   │   ├───bthoob.inf_amd64_c6923052f60677d9
+│   │   ├───bthpan.inf_amd64_b06c3bc32f7db374
+│   │   ├───bthprint.inf_amd64_d3a88fe647d71206
+│   │   ├───bthspp.inf_amd64_bdb56f181ef6934c
+│   │   ├───buttonconverter.inf_amd64_73b807c3bed63b18
+│   │   ├───cannonlake-lpsdhost.inf_amd64_1d1238b1cde02373
+│   │   ├───cannonlake-lpsystem.inf_amd64_111ce0eeaeebd5b3
+│   │   ├───cannonlake-lpsystemlpss.inf_amd64_816d25818766d78d
+│   │   ├───cannonlake-lpsystemnorthpeak.inf_amd64_b8d7686f7503a85e
+│   │   ├───cannonlake-lpsystemthermal.inf_amd64_1903113bfb668133
+│   │   ├───cdc-acm.inf_amd64_7c173df05350bded
+│   │   │   └───x64
+│   │   ├───cdrom.inf_amd64_28c103304ddff3c0
+│   │   ├───chargearbitration.inf_amd64_a0097842bcc7e487
+│   │   ├───cht4nulx64.inf_amd64_641bf08bee8ac46d
+│   │   ├───cht4sx64.inf_amd64_3a69b9b79f49eb50
+│   │   ├───cht4vx64.inf_amd64_b03448ba0b72ec47
+│   │   ├───circlass.inf_amd64_9f3f831d13d3df1f
+│   │   ├───cmbatt.inf_amd64_554d46f6008bc631
+│   │   ├───coffeelakesystem.inf_amd64_8846f174a6194cdc
+│   │   ├───compositebus.inf_amd64_7500cffa210c6946
+│   │   ├───cpu.inf_amd64_0abeab1ee6572232
+│   │   ├───cui_dch.inf_amd64_93239c65f222d453
+│   │   ├───cui_dch.inf_amd64_9ea30e7f88626f47
+│   │   ├───cui_dch_comp.inf_amd64_4938423c9b9639d7
+│   │   ├───c_1394.inf_amd64_cac08af12caec647
+│   │   ├───c_61883.inf_amd64_2c1769df23d261a5
+│   │   ├───c_apo.inf_amd64_a261b6effa32e5a2
+│   │   ├───c_avc.inf_amd64_8ee511eb19322856
+│   │   ├───c_barcodescanner.inf_amd64_266a07997c075b30
+│   │   ├───c_battery.inf_amd64_5637e58e54fb24bb
+│   │   ├───c_biometric.inf_amd64_edc558d403ab30c1
+│   │   ├───c_bluetooth.inf_amd64_7e49a68f06c14d10
+│   │   ├───c_camera.inf_amd64_7b52a9607d24ece6
+│   │   ├───c_cashdrawer.inf_amd64_a648ee708660440c
+│   │   ├───c_cdrom.inf_amd64_f08f2fe1cde58aef
+│   │   ├───c_computeaccelerator.inf_amd64_9d34992b3634b396
+│   │   ├───c_computer.inf_amd64_aa72c8894a821b32
+│   │   ├───c_diskdrive.inf_amd64_1debcd2bd95e9c0c
+│   │   ├───c_display.inf_amd64_c7457a37d16eaadf
+│   │   ├───c_dot4.inf_amd64_55905bb33692cd84
+│   │   ├───c_dot4print.inf_amd64_33c48c563d7541f7
+│   │   ├───c_extension.inf_amd64_7891c7d003f5e96b
+│   │   ├───c_fdc.inf_amd64_fe3599e7eac09e7f
+│   │   ├───c_firmware.inf_amd64_36e4e17f210128ab
+│   │   ├───c_floppydisk.inf_amd64_bc7bd9dca28933ec
+│   │   ├───c_fsactivitymonitor.inf_amd64_cccd1b2cb61d2440
+│   │   ├───c_fsantivirus.inf_amd64_632d2ac0d68cf3ed
+│   │   ├───c_fscfsmetadataserver.inf_amd64_ef3485e85c5c1b11
+│   │   ├───c_fscompression.inf_amd64_2aa5f249d7ee104a
+│   │   ├───c_fscontentscreener.inf_amd64_bd1517e25f3e419f
+│   │   ├───c_fscontinuousbackup.inf_amd64_4db9ca877f67dd36
+│   │   ├───c_fscopyprotection.inf_amd64_9c108d8ac558a80d
+│   │   ├───c_fsencryption.inf_amd64_b4b4845819a23338
+│   │   ├───c_fshsm.inf_amd64_48c6ccb73844d3bb
+│   │   ├───c_fsinfrastructure.inf_amd64_1ef682cfd6fc7d1c
+│   │   ├───c_fsopenfilebackup.inf_amd64_2174d2189fc8f164
+│   │   ├───c_fsphysicalquotamgmt.inf_amd64_796516c18b264f1e
+│   │   ├───c_fsquotamgmt.inf_amd64_5f092e2a496f61af
+│   │   ├───c_fsreplication.inf_amd64_cadbd20a667cf903
+│   │   ├───c_fssecurityenhancer.inf_amd64_e84a289dd0df20ff
+│   │   ├───c_fssystem.inf_amd64_89e15d7e662d6584
+│   │   ├───c_fssystemrecovery.inf_amd64_aa57df1ffa9aace0
+│   │   ├───c_fsundelete.inf_amd64_741f159cc6ce7814
+│   │   ├───c_fsvirtualization.inf_amd64_078671a0cdfe2870
+│   │   ├───c_hdc.inf_amd64_6e00e835fbceac58
+│   │   ├───c_hidclass.inf_amd64_b37df5bd0922aeef
+│   │   ├───c_holographic.inf_amd64_6ab9629b23deb837
+│   │   ├───c_image.inf_amd64_31731e48047fa274
+│   │   ├───c_infrared.inf_amd64_3160910a003e1f11
+│   │   ├───c_keyboard.inf_amd64_56ea9763e933f7c5
+│   │   ├───c_legacydriver.inf_amd64_c07aa9c633b5271e
+│   │   ├───c_linedisplay.inf_amd64_a720ddb820f10790
+│   │   ├───c_magneticstripereader.inf_amd64_86e291110e37418b
+│   │   ├───c_mcx.inf_amd64_fcbcc3807cbf63ec
+│   │   ├───c_media.inf_amd64_2dec3adbda5f7bb6
+│   │   ├───c_mediumchanger.inf_amd64_69ea0d8614286224
+│   │   ├───c_memory.inf_amd64_6fa9664593233d6e
+│   │   ├───c_modem.inf_amd64_8cddb75e34142905
+│   │   ├───c_monitor.inf_amd64_f02375bf47a4adb2
+│   │   ├───c_mouse.inf_amd64_822333b41326bc2f
+│   │   ├───c_mtd.inf_amd64_2f8cc39571965376
+│   │   ├───c_multifunction.inf_amd64_8bf0fd2423b20b97
+│   │   ├───c_multiportserial.inf_amd64_e92b6921fca885d5
+│   │   ├───c_net.inf_amd64_32a9ad23c1ecc42d
+│   │   ├───c_netclient.inf_amd64_b7f9bb71730aaf1a
+│   │   ├───c_netdriver.inf_amd64_2d569d832b41b8df
+│   │   ├───c_netservice.inf_amd64_9ab9cf10857f7349
+│   │   ├───c_nettrans.inf_amd64_b6d30279f382fa4b
+│   │   ├───c_pcmcia.inf_amd64_92be188847324ddb
+│   │   ├───c_pnpprinters.inf_amd64_0c653d53a35b896c
+│   │   ├───c_ports.inf_amd64_181d494584779290
+│   │   ├───c_printer.inf_amd64_cfb2c47c5677c442
+│   │   ├───c_processor.inf_amd64_4431cc603de6e020
+│   │   ├───c_proximity.inf_amd64_e42355875c34e406
+│   │   ├───c_receiptprinter.inf_amd64_7952e4baaee88d58
+│   │   ├───c_sbp2.inf_amd64_db7034ac4806cf05
+│   │   ├───c_scmdisk.inf_amd64_d8f75a9c87c2f7c4
+│   │   ├───c_scmvolume.inf_amd64_de693592afe8a496
+│   │   ├───c_scsiadapter.inf_amd64_efffb8c026d3abc5
+│   │   ├───c_sdhost.inf_amd64_b71f983cb35bfde3
+│   │   ├───c_securitydevices.inf_amd64_f10a5650b96630b9
+│   │   ├───c_sensor.inf_amd64_b8789b63cc1d26b5
+│   │   ├───c_smartcard.inf_amd64_bf5afc5892966e30
+│   │   ├───c_smartcardfilter.inf_amd64_3573afe136371e51
+│   │   ├───c_smartcardreader.inf_amd64_33a0db63c0afb351
+│   │   ├───c_smrdisk.inf_amd64_bbef253cecafbb1a
+│   │   ├───c_smrvolume.inf_amd64_1d430c5b72323a1c
+│   │   ├───c_sslaccel.inf_amd64_ed6849ad81a24c48
+│   │   ├───c_swcomponent.inf_amd64_f378d70fa39d3577
+│   │   ├───c_swdevice.inf_amd64_12050f4158021fcb
+│   │   ├───c_system.inf_amd64_184528953a6fb673
+│   │   ├───c_tapedrive.inf_amd64_a3a36e8f2c921ed7
+│   │   ├───c_ucm.inf_amd64_c30468a947db0fa8
+│   │   ├───c_unknown.inf_amd64_9f92c189b415c003
+│   │   ├───c_usb.inf_amd64_17c270ca25f45542
+│   │   ├───c_usbdevice.inf_amd64_815550fc328ea85b
+│   │   ├───c_usbfn.inf_amd64_64da5751ebd2f2f4
+│   │   ├───c_volsnap.inf_amd64_47e3741bbf4d6b06
+│   │   ├───c_volume.inf_amd64_a2da2b286ed77704
+│   │   ├───c_wceusbs.inf_amd64_1ba398d9da634d3f
+│   │   ├───c_wpd.inf_amd64_0245a364d71cf6b5
+│   │   ├───dal.inf_amd64_84f3ee967c282879
+│   │   ├───dal.inf_amd64_ffc75848a6342fdf
+│   │   ├───dc1-controller.inf_amd64_f046a4141192864f
+│   │   ├───dc21x4vm.inf_amd64_3294fc34256dbb0e
+│   │   ├───digitalmediadevice.inf_amd64_5b64b65052c3a32a
+│   │   ├───disk.inf_amd64_cc4dba2066ccf53c
+│   │   ├───display.inf_amd64_71aa85b0e2292a7a
+│   │   ├───displayoverride.inf_amd64_c7a5777273c98ebf
+│   │   ├───dptf_acpi.inf_amd64_412c3fbc71771682
+│   │   ├───dptf_acpi.inf_amd64_5989fd2721678bab
+│   │   ├───dptf_cpu.inf_amd64_562c4b3dbae7b963
+│   │   ├───dptf_cpu.inf_amd64_e3868713e3d137ef
+│   │   ├───e2xw10x64.inf_amd64_04c2ae40613a06ff
+│   │   ├───eaphost.inf_amd64_d37080dfb66d830b
+│   │   ├───ehstorpwddrv.inf_amd64_220e4fad6c84d016
+│   │   ├───ehstortcgdrv.inf_amd64_5cb0c23f45dac01c
+│   │   ├───errdev.inf_amd64_616c5168a5b1807a
+│   │   ├───etd.inf_amd64_0920106879d52332
+│   │   ├───etd.inf_amd64_7ab101071e3cd856
+│   │   ├───etdsmbus.inf_amd64_74fb1dbec8920138
+│   │   ├───etdsmbus.inf_amd64_d76f871e7859c9e8
+│   │   ├───etd_component.inf_amd64_2f5a7cd598bb237e
+│   │   ├───etd_component.inf_amd64_b03902434f3d0d0a
+│   │   ├───etd_extension.inf_amd64_60013d4279b88d31
+│   │   ├───e_wf1lve.inf_amd64_b11080806af3d0ba
+│   │   ├───e_wf1n3e.inf_amd64_b14f21eab2323454
+│   │   ├───e_wf1n4e.inf_amd64_ca34bab01be3dbe1
+│   │   ├───e_wf1n6e.inf_amd64_63fce7ce73bb0d2a
+│   │   ├───e_wf1ute.inf_amd64_4b0eea615510691c
+│   │   ├───fdc.inf_amd64_7534987814b257b2
+│   │   ├───fidohid.inf_amd64_c446be9403cdcdb1
+│   │   ├───flpydisk.inf_amd64_acb1691126c93472
+│   │   ├───fusionv2.inf_amd64_a47d9636ce0d7dab
+│   │   ├───gameport.inf_amd64_edfd5301fe3972d5
+│   │   ├───geminilakesystem.inf_amd64_55b3bfee0aa4baa9
+│   │   ├───geminilakesystem.inf_amd64_f6688c404f17eb9a
+│   │   ├───geminilakesystemgmm.inf_amd64_b04a2e78c682a95d
+│   │   ├───geminilakesystemgmm.inf_amd64_f1af1c4d81175fe8
+│   │   ├───geminilakesystemlpss.inf_amd64_ad0d70f366862d88
+│   │   ├───geminilakesystemnorthpeak.inf_amd64_c7e9b20088fe4e52
+│   │   ├───genericusbfn.inf_amd64_53931f0ae21d6d2c
+│   │   ├───hal.inf_amd64_fd0ae947345ac7bf
+│   │   ├───halextintclpiodma.inf_amd64_7f59f2c73a7fab14
+│   │   ├───halextpl080.inf_amd64_15251233835ef753
+│   │   ├───hdaudbus.inf_amd64_252861ee5d4a7765
+│   │   ├───hdaudio.inf_amd64_fe5b23ea7991a359
+│   │   ├───hdaudss.inf_amd64_76a0499c8a4b3752
+│   │   ├───hdbusext.inf_amd64_7572deb125bdcc3c
+│   │   ├───hdxhaphpnb.inf_amd64_6e82c95a3d2de42d
+│   │   ├───hdxhpnb.inf_amd64_23ff47fd311395bd
+│   │   ├───hdxhpnb.inf_amd64_9a550af0bb981b02
+│   │   ├───hdxrtbase.inf_amd64_5939432fc046cef8
+│   │   ├───hdxssthpnb.inf_amd64_d088d98aa06e625e
+│   │   ├───hdx_hpext_hsa.inf_amd64_2f24856644787df0
+│   │   ├───hdx_hpext_srold_cnxt.inf_amd64_0880225ead88f1ce
+│   │   ├───heat.inf_amd64_b73306c081719f1f
+│   │   ├───hidbatt.inf_amd64_a6fa9bcee39a694f
+│   │   ├───hidbth.inf_amd64_76fb27776958e530
+│   │   ├───hidbthle.inf_amd64_bfb3ee8e5a97c3be
+│   │   ├───hidcfu.inf_amd64_409fe85a7af72672
+│   │   ├───hiddigi.inf_amd64_dde7255b040ac897
+│   │   ├───hidi2c.inf_amd64_aad0f43cb9f97e75
+│   │   ├───hidinterrupt.inf_amd64_eeb986311b3a5b16
+│   │   ├───hidir.inf_amd64_7bf4a320e4ec8b3d
+│   │   ├───hidirkbd.inf_amd64_20ad4886826af1d2
+│   │   ├───hidscanner.inf_amd64_b4d877fbd7faf471
+│   │   ├───hidserv.inf_amd64_c20a3bb7ac1cd207
+│   │   ├───hidspi_km.inf_amd64_7e53b3972dc4df20
+│   │   ├───hidtelephonydriver.inf_amd64_6a750c83f98db936
+│   │   ├───hidvhf.inf_amd64_0a924aec7600dcde
+│   │   ├───hpanalyticscomp.inf_amd64_29c6c876bdaf5af9
+│   │   │   └───x64
+│   │   │       ├───Provider Data Sources
+│   │   │       │   ├───Battery
+│   │   │       │   ├───DiskSelfTest
+│   │   │       │   ├───DriverCrash
+│   │   │       │   │   └───x64
+│   │   │       │   ├───NVME
+│   │   │       │   │   └───x64
+│   │   │       │   ├───PnPDevice
+│   │   │       │   ├───ProcInfo
+│   │   │       │   └───_Shared
+│   │   │       │       └───DiskCheck
+│   │   │       ├───Providers
+│   │   │       └───x64
+│   │   ├───hpanalyticscomp.inf_amd64_a6e24179070178de
+│   │   │   └───x64
+│   │   │       ├───Provider Data Sources
+│   │   │       │   ├───Battery
+│   │   │       │   ├───DiskSelfTest
+│   │   │       │   ├───DriverCrash
+│   │   │       │   │   └───x64
+│   │   │       │   ├───NVME
+│   │   │       │   │   └───x64
+│   │   │       │   ├───PnPDevice
+│   │   │       │   ├───ProcInfo
+│   │   │       │   └───_Shared
+│   │   │       │       └───DiskCheck
+│   │   │       ├───Providers
+│   │   │       └───x64
+│   │   ├───hpanalyticsext.inf_amd64_3a6ff2db7adb4d06
+│   │   ├───hpaudiocenterhsa.inf_amd64_b82147c205a1a101
+│   │   ├───hpaudiocontrolhsa.inf_amd64_5b081a3131a37001
+│   │   ├───hpaudiocontrolhsa.inf_amd64_d7fbc472a48e2187
+│   │   ├───hpaudioextsynaptics.inf_amd64_06f3f66285fb3879
+│   │   ├───hpcustomcapcomp.inf_amd64_620459b7cf27a23d
+│   │   │   └───x64
+│   │   ├───hpcustomcapcomp.inf_amd64_b7ebf8cfcf460a6c
+│   │   │   └───x64
+│   │   ├───hpcustomcapdriver.inf_amd64_1f5602eb8a12ac4c
+│   │   │   └───x64
+│   │   ├───hpcustomcapdriver.inf_amd64_a955fa431e522f5e
+│   │   │   └───x64
+│   │   ├───hpcustomcapext.inf_amd64_0f5e7dcd65a4f8b9
+│   │   ├───hpsamd.inf_amd64_0784fd3ef0d7ec93
+│   │   ├───iagpio.inf_amd64_07b64df61e783bfe
+│   │   ├───iai2c.inf_amd64_a77c815b2999404d
+│   │   ├───ialpss2i_gpio2_bxt_p.inf_amd64_8be317e01b44bf5a
+│   │   ├───ialpss2i_gpio2_cnl.inf_amd64_a60833fda31e9831
+│   │   ├───ialpss2i_gpio2_glk.inf_amd64_dad1e0a2b185e32b
+│   │   ├───ialpss2i_gpio2_skl.inf_amd64_b68199ad84607c21
+│   │   ├───ialpss2i_i2c_bxt_p.inf_amd64_190858fd8e931883
+│   │   ├───ialpss2i_i2c_cnl.inf_amd64_f668309b543472eb
+│   │   ├───ialpss2i_i2c_glk.inf_amd64_7b6c08738ca8a856
+│   │   ├───ialpss2i_i2c_skl.inf_amd64_9d9dbb01837eba23
+│   │   ├───ialpssi_gpio.inf_amd64_62ffa3c95446bcfc
+│   │   ├───ialpssi_i2c.inf_amd64_8e00e1aed7fbdf70
+│   │   ├───iastorav.inf_amd64_87f761c07c99d5e7
+│   │   ├───iastorv.inf_amd64_9c09bd1df352f065
+│   │   ├───iclsclient.inf_amd64_75ffca5eec865b4b
+│   │   │   ├───conf
+│   │   │   ├───Documents
+│   │   │   └───lib
+│   │   ├───iclsclient.inf_amd64_91e310531f9425cc
+│   │   │   ├───iCLS
+│   │   │   │   ├───conf
+│   │   │   │   ├───Documents
+│   │   │   │   ├───x64
+│   │   │   │   └───x86
+│   │   │   └───vs2015
+│   │   │       ├───x64
+│   │   │       └───x86
+│   │   ├───idtsec.inf_amd64_9321d33f1997dbfd
+│   │   ├───igcc_dch.inf_amd64_caa7639078e34732
+│   │   ├───iigd_dch.inf_amd64_6ce565ec54103c62
+│   │   ├───iigd_ext.inf_amd64_892d1d1d20845d72
+│   │   ├───image.inf_amd64_d2006c0517ddc60c
+│   │   ├───input.inf_amd64_adeb6424513f60a2
+│   │   ├───intcdaud.inf_amd64_1b570d7b9a790b1a
+│   │   ├───intcdaud.inf_amd64_6aef99a0fd5f7d29
+│   │   ├───intcdaud.inf_amd64_874a553c257a86b6
+│   │   ├───intcdaud.inf_amd64_903eba7571a52ae1
+│   │   ├───intelpep.inf_amd64_2e156c5dc4231642
+│   │   ├───intelpmax.inf_amd64_2ddee95f7a5d85db
+│   │   ├───intelta.inf_amd64_ba962d801a22973c
+│   │   ├───ip27006.inf_amd64_52644ebc4492427e
+│   │   ├───ipmidrv.inf_amd64_ddb154dfd1a1c33d
+│   │   ├───ipoib6x.inf_amd64_ef71073a5867971f
+│   │   ├───iscsi.inf_amd64_c089962740ea1f84
+│   │   ├───itsas35i.inf_amd64_4f5850c71046b0cb
+│   │   ├───kabylakepch-hsystem.inf_amd64_7d5ab2bab20d16be
+│   │   ├───kabylakepch-hsystemlpss.inf_amd64_3b5f1f2ad65c9cb0
+│   │   ├───kabylakepch-hsystemnorthpeak.inf_amd64_2f19ecb2c3cb8ce8
+│   │   ├───kabylakepch-hsystemthermal.inf_amd64_66d483c9242fe151
+│   │   ├───kabylakesystem.inf_amd64_40cf8c597315ea1d
+│   │   ├───kabylakesystemgmm.inf_amd64_5965ed63a0620811
+│   │   ├───kdnic.inf_amd64_6649425cdcae9b5f
+│   │   ├───keyboard.inf_amd64_5938c699b80ebb8f
+│   │   ├───ks.inf_amd64_9fac168e1cbea90c
+│   │   ├───kscaptur.inf_amd64_b95d9f4691816045
+│   │   ├───ksfilter.inf_amd64_d5c8b2a031c7d5c5
+│   │   ├───lltdio.inf_amd64_4faf5a37ebdbec2b
+│   │   ├───lsi_sas.inf_amd64_74bb5e3e01cfd526
+│   │   ├───lsi_sas2i.inf_amd64_b4e933c4540ad3cc
+│   │   ├───lsi_sas3i.inf_amd64_79c7a4d8be0a9744
+│   │   ├───lsi_sss.inf_amd64_503a2398f4c86893
+│   │   ├───machine.inf_amd64_b748590104fe1c15
+│   │   ├───mausbhost.inf_amd64_34c86c15777c913b
+│   │   ├───mbtr8897w81x64.inf_amd64_0d8225e7d2696ece
+│   │   ├───mchgr.inf_amd64_399f04975a0af112
+│   │   ├───mdm3com.inf_amd64_7a75739c411a71d6
+│   │   ├───mdm5674a.inf_amd64_ec8de8952888a618
+│   │   ├───mdmadc.inf_amd64_7b6fc0e15997ce81
+│   │   ├───mdmagm64.inf_amd64_7f60bc7ff484a292
+│   │   ├───mdmags64.inf_amd64_767b2d723d0fe83b
+│   │   ├───mdmairte.inf_amd64_a99a7ecb03853141
+│   │   ├───mdmaiwa.inf_amd64_7cfab61cbab23e11
+│   │   ├───mdmaiwa3.inf_amd64_ff37da248ddd748a
+│   │   ├───mdmaiwa4.inf_amd64_b74e18ebf47de72a
+│   │   ├───mdmaiwa5.inf_amd64_8416dd97e1ecb6dc
+│   │   ├───mdmaiwat.inf_amd64_3bb2e5702f25a518
+│   │   ├───mdmar1.inf_amd64_b2ebe9229789b181
+│   │   ├───mdmarch.inf_amd64_1ae6ea0bf54c0f5c
+│   │   ├───mdmarn.inf_amd64_947cdd3822225c16
+│   │   ├───mdmati.inf_amd64_16fbf6520a254fad
+│   │   ├───mdmatm2k.inf_amd64_de71647ec29a6bc2
+│   │   ├───mdmaus.inf_amd64_f9b71b1d9c8643e2
+│   │   ├───mdmboca.inf_amd64_c4ed3602d3c754f2
+│   │   ├───mdmbsb.inf_amd64_0e44beb9cebe5a1e
+│   │   ├───mdmbtmdm.inf_amd64_9e5602638617558e
+│   │   ├───mdmbug3.inf_amd64_aef240978776cd0b
+│   │   ├───mdmbw561.inf_amd64_0406b31e81bea0d1
+│   │   ├───mdmc26a.inf_amd64_dd85a83bc442ed33
+│   │   ├───mdmcdp.inf_amd64_919b7beec2c70482
+│   │   ├───mdmcm28.inf_amd64_4b833c2630a2a287
+│   │   ├───mdmcodex.inf_amd64_f5594a2af66d11ab
+│   │   ├───mdmcom1.inf_amd64_cfd501781ae941c0
+│   │   ├───mdmcommu.inf_amd64_9d8718c8b82a0aeb
+│   │   ├───mdmcomp.inf_amd64_bf289615d063c627
+│   │   ├───mdmcpq.inf_amd64_3acec385f5d67bdf
+│   │   ├───mdmcpq2.inf_amd64_2115846fffc22bb2
+│   │   ├───mdmcpv.inf_amd64_906547002cc7c58e
+│   │   ├───mdmcrtix.inf_amd64_e3ded2b26d662526
+│   │   ├───mdmcxhv6.inf_amd64_f1a7a2fbd6554d60
+│   │   ├───mdmcxpv6.inf_amd64_46a3b42507e9d29e
+│   │   ├───mdmdcm5.inf_amd64_a432be022b5f8139
+│   │   ├───mdmdcm6.inf_amd64_8b49cb79b258e1ab
+│   │   ├───mdmdf56f.inf_amd64_1e78e192efc26192
+│   │   ├───mdmdgitn.inf_amd64_6360d736a6f64e35
+│   │   ├───mdmdp2.inf_amd64_6550f790ed88c7ba
+│   │   ├───mdmdsi.inf_amd64_0b96cc4cfeb2cbf8
+│   │   ├───mdmdyna.inf_amd64_d89605b6b478d768
+│   │   ├───mdmeiger.inf_amd64_05ca2a1836c16cab
+│   │   ├───mdmelsa.inf_amd64_f187fca538857daa
+│   │   ├───mdmeric.inf_amd64_41ae7c84b8d94de0
+│   │   ├───mdmeric2.inf_amd64_facbddcbb097c790
+│   │   ├───mdmetech.inf_amd64_bbd46500a9d0e020
+│   │   ├───mdmfj2.inf_amd64_167948d0c94abc27
+│   │   ├───mdmgatew.inf_amd64_7e6c377859cfcb7c
+│   │   ├───mdmgcs.inf_amd64_e47e06e16f2aad12
+│   │   ├───mdmgen.inf_amd64_977aa23dfab87f15
+│   │   ├───mdmgl001.inf_amd64_e09ac82d497a19c5
+│   │   ├───mdmgl002.inf_amd64_9076ffc34f080cc1
+│   │   ├───mdmgl003.inf_amd64_6b639ff361f628eb
+│   │   ├───mdmgl004.inf_amd64_189d0189716edeb1
+│   │   ├───mdmgl005.inf_amd64_d9886a7bbe9e55ca
+│   │   ├───mdmgl006.inf_amd64_130cd40b355024c9
+│   │   ├───mdmgl007.inf_amd64_41e31b5786c6884d
+│   │   ├───mdmgl008.inf_amd64_c0d977e565fdc839
+│   │   ├───mdmgl009.inf_amd64_3bab34655afeb7e4
+│   │   ├───mdmgl010.inf_amd64_b4f4b670a266fda5
+│   │   ├───mdmgsm.inf_amd64_d7b1959484ec8228
+│   │   ├───mdmhaeu.inf_amd64_e0c209c891e162a4
+│   │   ├───mdmhandy.inf_amd64_d2feb24c2d3b69d4
+│   │   ├───mdmhay2.inf_amd64_e87e378eb673af65
+│   │   ├───mdmhayes.inf_amd64_055d85baabbda8f6
+│   │   ├───mdminfot.inf_amd64_564561a23e05c7ee
+│   │   ├───mdmiodat.inf_amd64_95e01117eb9c1bd2
+│   │   ├───mdmirmdm.inf_amd64_ba5b77b7d46bc10d
+│   │   ├───mdmisdn.inf_amd64_ded39545dc6c301b
+│   │   ├───mdmjf56e.inf_amd64_07bca0bfd5173050
+│   │   ├───mdmke.inf_amd64_b83f029888180def
+│   │   ├───mdmkortx.inf_amd64_93b84ecb5fd1cc85
+│   │   ├───mdmlasat.inf_amd64_36a71a022d8bb0bb
+│   │   ├───mdmlasno.inf_amd64_61370f3a47f08ebd
+│   │   ├───mdmlucnt.inf_amd64_f4769cb994ece833
+│   │   ├───mdmmc288.inf_amd64_3e3f05a8a446e75f
+│   │   ├───mdmmcd.inf_amd64_43b149b35876b241
+│   │   ├───mdmmcom.inf_amd64_9179c145f01530e4
+│   │   ├───mdmmct.inf_amd64_0f3268711a5b2622
+│   │   ├───mdmmega.inf_amd64_f35131186d3026aa
+│   │   ├───mdmmetri.inf_amd64_50397e28bbcd6514
+│   │   ├───mdmmhrtz.inf_amd64_aa2738d63955f632
+│   │   ├───mdmmhzel.inf_amd64_e90a0a4c8e15815d
+│   │   ├───mdmminij.inf_amd64_a85c8e1fe15a9532
+│   │   ├───mdmmod.inf_amd64_51d6c57c66e3de87
+│   │   ├───mdmmot64.inf_amd64_2afbe7d3ad20f42a
+│   │   ├───mdmmoto1.inf_amd64_5b5f11128afa2611
+│   │   ├───mdmmotou.inf_amd64_8370fa408706074c
+│   │   ├───mdmmts.inf_amd64_bc07e137c52c529a
+│   │   ├───mdmneuhs.inf_amd64_eb59a40d88060ada
+│   │   ├───mdmnis1u.inf_amd64_64035dd8a7571ba7
+│   │   ├───mdmnis2u.inf_amd64_0c5757ecd1574b3d
+│   │   ├───mdmnis3t.inf_amd64_9f214efed426c12a
+│   │   ├───mdmnis5t.inf_amd64_c6e181de81a59b54
+│   │   ├───mdmnokia.inf_amd64_9be5ff0f15b15eb7
+│   │   ├───mdmnova.inf_amd64_4da8a5889bbd1a21
+│   │   ├───mdmntt1.inf_amd64_263b3076d78209be
+│   │   ├───mdmnttd2.inf_amd64_76ccb77f33c66c43
+│   │   ├───mdmnttd6.inf_amd64_28e2bee7229aaf9f
+│   │   ├───mdmnttme.inf_amd64_edc94fc65bef3d27
+│   │   ├───mdmnttp.inf_amd64_527c415254a7e378
+│   │   ├───mdmnttp2.inf_amd64_8c1e04ee38482578
+│   │   ├───mdmnttte.inf_amd64_f017e7b18ec67a97
+│   │   ├───mdmolic.inf_amd64_7f84203a67c210e4
+│   │   ├───mdmomrn3.inf_amd64_c2314613ba3f3585
+│   │   ├───mdmoptn.inf_amd64_583bd0f3892e01df
+│   │   ├───mdmosi.inf_amd64_fce30a36dbc4596c
+│   │   ├───mdmpace.inf_amd64_5e0fbd01da4f7c7b
+│   │   ├───mdmpenr.inf_amd64_20c8782372e47bd2
+│   │   ├───mdmpin.inf_amd64_be5d923b5e701b62
+│   │   ├───mdmpn1.inf_amd64_7e6108426fdce03a
+│   │   ├───mdmpp.inf_amd64_e196624c9ed43e83
+│   │   ├───mdmpsion.inf_amd64_28542b9aafacda15
+│   │   ├───mdmracal.inf_amd64_dd534e815632509c
+│   │   ├───mdmrock.inf_amd64_9b13bcc1f320d1ad
+│   │   ├───mdmrock3.inf_amd64_9977beff54a96490
+│   │   ├───mdmrock4.inf_amd64_bc507add47f436ae
+│   │   ├───mdmrock5.inf_amd64_e485f7ac03009434
+│   │   ├───mdmsier.inf_amd64_3ae2ea3a55ec0279
+│   │   ├───mdmsii64.inf_amd64_0f02175b17cd3f66
+│   │   ├───mdmsmart.inf_amd64_3ca4b12cda56232e
+│   │   ├───mdmsonyu.inf_amd64_0e77868deff0b0cd
+│   │   ├───mdmsun1.inf_amd64_5b6db32fd04403a3
+│   │   ├───mdmsun2.inf_amd64_de323a35134348a2
+│   │   ├───mdmsupr3.inf_amd64_9cb7ddc26e30b52c
+│   │   ├───mdmsupra.inf_amd64_ed209c9a3da66777
+│   │   ├───mdmsuprv.inf_amd64_696bb57f8e3bab65
+│   │   ├───mdmtdk.inf_amd64_9e49da794995b361
+│   │   ├───mdmtdkj2.inf_amd64_46dd0342577f43cd
+│   │   ├───mdmtdkj3.inf_amd64_9658f2eb83f061c9
+│   │   ├───mdmtdkj4.inf_amd64_3bc71c4327f9f94e
+│   │   ├───mdmtdkj5.inf_amd64_6f327fe9ac4fdb28
+│   │   ├───mdmtdkj6.inf_amd64_5a503c811e650e70
+│   │   ├───mdmtdkj7.inf_amd64_161e1375bcff85d9
+│   │   ├───mdmtexas.inf_amd64_ed0ab85128ed7a01
+│   │   ├───mdmti.inf_amd64_bcde2913bb6ccf3d
+│   │   ├───mdmtkr.inf_amd64_a8a4ecec7082e1aa
+│   │   ├───mdmtron.inf_amd64_0b075e1cb11005f4
+│   │   ├───mdmusrf.inf_amd64_ddaa09c6103bc6ce
+│   │   ├───mdmusrg.inf_amd64_bb7c44c7bb3664d0
+│   │   ├───mdmusrgl.inf_amd64_19bd1d6c2b642b6f
+│   │   ├───mdmusrk1.inf_amd64_050c7496eacdd103
+│   │   ├───mdmusrsp.inf_amd64_4c83ce3a06d0048e
+│   │   ├───mdmvdot.inf_amd64_04863374c9db2052
+│   │   ├───mdmvv.inf_amd64_26dc960cc4c84207
+│   │   ├───mdmwhql0.inf_amd64_db80a6e1be3a2d08
+│   │   ├───mdmx5560.inf_amd64_209486f1c39d4b46
+│   │   ├───mdmzoom.inf_amd64_37bf8591584019e1
+│   │   ├───mdmzyp.inf_amd64_19eb30e94285f2a6
+│   │   ├───mdmzyxel.inf_amd64_1edcf626fd489056
+│   │   ├───mdmzyxlg.inf_amd64_c5ee07feb8dae038
+│   │   ├───megasas.inf_amd64_289e18fb610dd883
+│   │   ├───megasas2i.inf_amd64_ed501deb0beeb5cb
+│   │   ├───megasas35i.inf_amd64_4df7f6223ebcd28d
+│   │   ├───megasr.inf_amd64_72258921635be994
+│   │   ├───memory.inf_amd64_9af3a8a63d4cb5f9
+│   │   ├───mf.inf_amd64_e3c6d8265de5138c
+│   │   ├───mgtdyn.inf_amd64_a6235e923dc4047c
+│   │   ├───microsoft_bluetooth_a2dp.inf_amd64_5125dcc73114e4dc
+│   │   ├───microsoft_bluetooth_a2dp_snk.inf_amd64_213eeba98cc6f2f4
+│   │   ├───microsoft_bluetooth_a2dp_src.inf_amd64_0bdbb11733d87f9a
+│   │   ├───microsoft_bluetooth_avrcptransport.inf_amd64_6506aa4ac05430d7
+│   │   ├───microsoft_bluetooth_hfp.inf_amd64_9effd93a75bc489e
+│   │   ├───microsoft_bluetooth_hfp_ag.inf_amd64_d2736f1d9bc815e1
+│   │   ├───microsoft_bluetooth_hfp_hf.inf_amd64_0c00f8f3a465c9a4
+│   │   ├───miradisp.inf_amd64_14cd3615d012fdf0
+│   │   ├───mlx4_bus.inf_amd64_4c426f3bebc68844
+│   │   ├───modemcsa.inf_amd64_a76330a2da8329a2
+│   │   ├───monitor.inf_amd64_8a98af5011ee4dc6
+│   │   ├───mrvlpcie8897.inf_amd64_07fc330c5a5730ca
+│   │   ├───msclmd.inf_amd64_d677afecc5e43162
+│   │   ├───msdk.inf_amd64_c3730aabd3d89902
+│   │   ├───msdk_comp.inf_amd64_e07c794d37698d9a
+│   │   ├───msdri.inf_amd64_97bef65a8432edd4
+│   │   ├───msdv.inf_amd64_5c153f7ff7d0d00a
+│   │   ├───msgpiowin32.inf_amd64_46634fa071d1db0d
+│   │   ├───mshdadac.inf_amd64_7118897022b175a1
+│   │   ├───mshdc.inf_amd64_0d06b6638bdb4763
+│   │   ├───msmouse.inf_amd64_1793a485b491b199
+│   │   ├───msports.inf_amd64_f2e8231e8b60f214
+│   │   ├───mssmbios.inf_amd64_9fc7fe03de136fc1
+│   │   ├───mstape.inf_amd64_3e2c4fa2d4cbb487
+│   │   ├───msux64w10.inf_amd64_5aa81644af5957b3
+│   │   ├───mtconfig.inf_amd64_fe91941ed205cd9b
+│   │   ├───multiprt.inf_amd64_a9b96d6c7813082a
+│   │   ├───mvumis.inf_amd64_f0f4d0c799bb854a
+│   │   ├───mwlu97w8x64.inf_amd64_23bc3dc6d91eebdc
+│   │   ├───ndiscap.inf_amd64_a009d240f9b4a192
+│   │   ├───ndisimplatform.inf_amd64_b6b644565437983a
+│   │   ├───ndisimplatformmp.inf_amd64_8de1181bfd1f1628
+│   │   ├───ndisuio.inf_amd64_6096fd74a67ccd5d
+│   │   ├───ndisvirtualbus.inf_amd64_e8d548ad6f0a613a
+│   │   ├───net1ic64.inf_amd64_5f033e913d34d111
+│   │   ├───net1yx64.inf_amd64_8604d8a50804b9c1
+│   │   ├───net44amd.inf_amd64_450d4b1e35cc8e0d
+│   │   ├───net7400-x64-n650.inf_amd64_557ce3b37c3e0e3b
+│   │   ├───net7500-x64-n650f.inf_amd64_cc87c915f33d1c27
+│   │   ├───net7800-x64-n650f.inf_amd64_178f1bdb49a6e2fd
+│   │   ├───net8185.inf_amd64_7a30f5a9441cd55b
+│   │   ├───net8187bv64.inf_amd64_bc859d32f3e2f0d5
+│   │   ├───net8187se64.inf_amd64_99a4ca261f585f17
+│   │   ├───net8192se64.inf_amd64_167684f9283b4eca
+│   │   ├───net8192su64.inf_amd64_66c8bfc7a4b1feed
+│   │   ├───net819xp.inf_amd64_ff7a5dd4f9b1ceba
+│   │   ├───net9500-x64-n650f.inf_amd64_e92c5a65e41993f9
+│   │   ├───netathr10x.inf_amd64_2691c4f95b80eb3b
+│   │   ├───netathrx.inf_amd64_220db23f5419ea8d
+│   │   ├───netavpna.inf_amd64_f6f0831ba09dd9f5
+│   │   ├───netax88179_178a.inf_amd64_b6748bc8bb8ccf4d
+│   │   ├───netax88772.inf_amd64_5d1c92f42d958529
+│   │   ├───netbc63a.inf_amd64_7ba6c9cea77dd549
+│   │   ├───netbc64.inf_amd64_b96cdf411c43c00c
+│   │   ├───netbrdg.inf_amd64_8a737d38f201aeb1
+│   │   ├───netbvbda.inf_amd64_06bc8afcd2617abf
+│   │   ├───netbxnda.inf_amd64_1fff3bc87a99b0f1
+│   │   ├───nete1e3e.inf_amd64_895623810c19146a
+│   │   ├───nete1g3e.inf_amd64_af58b4e19562a3f9
+│   │   ├───netefe3e.inf_amd64_7830581a689ef40d
+│   │   ├───netelx.inf_amd64_7812e4e45c4a5eb1
+│   │   ├───netevbda.inf_amd64_1503f4d5a0d6ba56
+│   │   ├───netg664.inf_amd64_84cd7b2798e0a666
+│   │   ├───netimm.inf_amd64_8b2087393aaef952
+│   │   ├───netip6.inf_amd64_f29ffcd2b14f21f5
+│   │   ├───netirda.inf_amd64_186702cd081cddb0
+│   │   ├───netjme.inf_amd64_752bf22f1598bb7e
+│   │   ├───netk57a.inf_amd64_d823e3edc27ae17c
+│   │   ├───netl160a.inf_amd64_e4cbe375963a69e9
+│   │   ├───netl1c63x64.inf_amd64_4d6630ce07a4fb42
+│   │   ├───netl1e64.inf_amd64_8d5ca5ab1472fc44
+│   │   ├───netl260a.inf_amd64_783312763f8749c7
+│   │   ├───netlldp.inf_amd64_fbd4bbbad72f0e6b
+│   │   ├───netloop.inf_amd64_762588e32974f9e8
+│   │   ├───netmlx4eth63.inf_amd64_3809a4a3e7e07703
+│   │   ├───netmlx5.inf_amd64_101a408e6cb1d8f8
+│   │   ├───netmscli.inf_amd64_b39ea5f4658998de
+│   │   ├───netmyk64.inf_amd64_1f949c30555f4111
+│   │   ├───netnb.inf_amd64_0dc913ad00b14824
+│   │   ├───netnvm64.inf_amd64_35bbbe80dec15683
+│   │   ├───netnvma.inf_amd64_7080f6b8ea1744fb
+│   │   ├───netnwifi.inf_amd64_a2bfd066656fe297
+│   │   ├───netpacer.inf_amd64_7d294c7fa012d315
+│   │   ├───netpgm.inf_amd64_e099e4a7092b374c
+│   │   ├───netr28ux.inf_amd64_d5996f2a9d9aa9e3
+│   │   ├───netr28x.inf_amd64_5d63c7bcbf29107f
+│   │   ├───netr7364.inf_amd64_310ee0bc0af86ba3
+│   │   ├───netrasa.inf_amd64_1bdf7a435cb3580d
+│   │   ├───netrass.inf_amd64_7f701cb29b5389d3
+│   │   ├───netrast.inf_amd64_935f1046c28ea0dc
+│   │   ├───netrndis.inf_amd64_be4ba6237d385e2e
+│   │   ├───netrtl64.inf_amd64_8e9c2368fe308df2
+│   │   ├───netrtwlane.inf_amd64_153e1edaeb81b32f
+│   │   ├───netrtwlane.inf_amd64_20caba88bd7f0bb3
+│   │   ├───netrtwlane.inf_amd64_48b18781774d062c
+│   │   ├───netrtwlane.inf_amd64_593f4b151982047c
+│   │   ├───netrtwlane.inf_amd64_bf25106a67f979d2
+│   │   ├───netrtwlane01.inf_amd64_b02695ef070d7a42
+│   │   ├───netrtwlane_13.inf_amd64_992f4f46e65f30d4
+│   │   ├───netrtwlane_ext_ihv.inf_amd64_1ecd2d709159301e
+│   │   ├───netrtwlans.inf_amd64_97cd1a72c2a7829c
+│   │   ├───netrtwlanu.inf_amd64_1815bafd14dc59f0
+│   │   ├───netserv.inf_amd64_73adce5afe861093
+│   │   ├───netsstpa.inf_amd64_e76c5387d67e3fd6
+│   │   ├───nett4x64.inf_amd64_54eacac1858c78ab
+│   │   ├───nettcpip.inf_amd64_96215b82eaa40fd5
+│   │   ├───netv1x64.inf_amd64_30040c3eb9d7ade4
+│   │   ├───netvchannel.inf_amd64_ba3e73aa330c95d6
+│   │   ├───netvf63a.inf_amd64_a090e6cfaf18cb5c
+│   │   ├───netvg63a.inf_amd64_9f5493180b1252cf
+│   │   ├───netvwifibus.inf_amd64_f52d5ad58116f6f0
+│   │   ├───netvwififlt.inf_amd64_c5e19aab2305f37f
+│   │   ├───netvwifimp.inf_amd64_ec11d0ad3c5b262a
+│   │   ├───netvwwanmp.inf_amd64_f9e30429669d7fff
+│   │   ├───netwbw02.inf_amd64_1c4077fa004e73b4
+│   │   ├───netwew00.inf_amd64_325c0bd6349ed81c
+│   │   ├───netwew01.inf_amd64_153e01d761813df2
+│   │   ├───netwlv64.inf_amd64_0b9818131664d91e
+│   │   ├───netwmbclass.inf_amd64_dba6eeaf0544a4e0
+│   │   ├───netwns64.inf_amd64_162bb49f925c6463
+│   │   ├───netwsw00.inf_amd64_24d55504ae3587aa
+│   │   ├───netwtw02.inf_amd64_42e02bae858d0fbd
+│   │   ├───netwtw04.inf_amd64_c8f5ae6576289a2d
+│   │   ├───netwtw06.inf_amd64_2edd50e7a54d503b
+│   │   ├───netwtw08.inf_amd64_7c0c516fb22456cd
+│   │   ├───netxex64.inf_amd64_ede00b448bfe8099
+│   │   ├───npsvctrig.inf_amd64_b98e9a5325075265
+│   │   ├───ntprint.inf_amd64_c62e9f8067f98247
+│   │   │   └───Amd64
+│   │   ├───ntprint.inf_x86_c62e9f8067f98247
+│   │   │   └───I386
+│   │   ├───ntprint4.inf_amd64_0958c7cad3cd6075
+│   │   │   └───Amd64
+│   │   ├───nulhpopr.inf_amd64_9839c838c72c0594
+│   │   ├───nulhprs8.inf_amd64_e65ae5a38cb839e5
+│   │   ├───nvdimm.inf_amd64_9bb46b0de5ea33cd
+│   │   ├───nvraid.inf_amd64_144351277838b429
+│   │   ├───oemextension.inf_amd64_975d62e156b9fb8c
+│   │   ├───omenaudiocontrolhsa.inf_amd64_f3d5f46c95652525
+│   │   ├───oposdrv.inf_amd64_9090a824ce0d0e68
+│   │   ├───pci.inf_amd64_e8ca312fe4a0452d
+│   │   ├───pcmcia.inf_amd64_cb18bba4788e47f7
+│   │   ├───perceptionsimulationheadset.inf_amd64_47c7e539c0156424
+│   │   ├───perceptionsimulationsixdof.inf_amd64_3ff016f4df6d2b8a
+│   │   ├───perceptionsimulationsixdofmodels.inf_amd64_acff50a7960b7d19
+│   │   ├───percsas2i.inf_amd64_a7f5d94e6751c911
+│   │   ├───percsas3i.inf_amd64_c17a63dada1eaa02
+│   │   ├───pmem.inf_amd64_acec109593aed940
+│   │   ├───pneteth.inf_amd64_32425935a1df9924
+│   │   ├───pnpxinternetgatewaydevices.inf_amd64_82b90e51473d48ea
+│   │   ├───printqueue.inf_amd64_12d9f43eb5d02987
+│   │   ├───prnepcl2.inf_amd64_6afabe7d5ac06976
+│   │   │   └───amd64
+│   │   ├───prnge001.inf_amd64_1daeee8f3aa30fcb
+│   │   │   └───Amd64
+│   │   ├───prnms001.inf_amd64_8bc1bda6cf47380c
+│   │   ├───prnms002.inf_amd64_c3bd6686769ee10c
+│   │   │   └───Amd64
+│   │   ├───prnms003.inf_amd64_676d438dd7e5c4fe
+│   │   │   └───Amd64
+│   │   ├───prnms003.inf_x86_29ded1eecda2fb0b
+│   │   │   └───I386
+│   │   ├───prnms004.inf_amd64_c28ee88ec1bd4178
+│   │   │   └───Amd64
+│   │   ├───prnms005.inf_amd64_add71423ba73e797
+│   │   │   └───Amd64
+│   │   ├───prnms007.inf_amd64_8bbf44975c626ac5
+│   │   │   └───Amd64
+│   │   ├───prnms008.inf_amd64_69b5e0c918eab9a6
+│   │   │   └───Amd64
+│   │   ├───prnms009.inf_amd64_a7412a554c9bc1fd
+│   │   ├───prnms010.inf_amd64_9e410195c3b236c9
+│   │   │   └───Amd64
+│   │   ├───prnms011.inf_amd64_f83138380f5fb6ab
+│   │   │   └───Amd64
+│   │   ├───prnms012.inf_amd64_707d3849370b9d23
+│   │   │   └───Amd64
+│   │   ├───prnms013.inf_amd64_2b1aa5c0f193f278
+│   │   ├───prnms014.inf_amd64_faec3fc366f8e1fa
+│   │   │   └───Amd64
+│   │   ├───qcfilter.inf_amd64_5d529667b928c62b
+│   │   │   └───filter
+│   │   │       └───amd64
+│   │   ├───qcmdm.inf_amd64_883a0d375a1f7a39
+│   │   │   └───serial
+│   │   │       └───amd64
+│   │   ├───qcnet.inf_amd64_d48792835acc1a36
+│   │   │   └───ndis
+│   │   │       └───5.1
+│   │   │           └───amd64
+│   │   ├───qcser.inf_amd64_da2bdde674bc3d1e
+│   │   │   └───serial
+│   │   │       └───amd64
+│   │   ├───qcwwan.inf_amd64_6a308f49526a219b
+│   │   │   └───ndis
+│   │   │       └───6.2
+│   │   │           └───amd64
+│   │   ├───qd3x64.inf_amd64_fd7b06296b7ac679
+│   │   ├───rawsilo.inf_amd64_1cbfddc97a663ba6
+│   │   ├───rdcameradriver.inf_amd64_43b67cb2258aaa60
+│   │   ├───rdpbus.inf_amd64_05ebd3b4422f62ba
+│   │   ├───rdpidd.inf_amd64_ce12c614d182f4f9
+│   │   ├───realtekapo.inf_amd64_7a181ead10b888f9
+│   │   ├───realtekapo.inf_amd64_b2e914d4300e0bab
+│   │   ├───realtekhsa.inf_amd64_e7cc19786d91ca6c
+│   │   ├───realtekservice.inf_amd64_2e89f551122a9b8e
+│   │   ├───realtekservice.inf_amd64_6150178433add351
+│   │   ├───remoteposdrv.inf_amd64_0f0da968c1cfce06
+│   │   ├───rhproxy.inf_amd64_7d28259fbc48ab7d
+│   │   ├───rndiscmp.inf_amd64_81bff1eb756435c6
+│   │   ├───rspndr.inf_amd64_4e80c2bb5314f071
+│   │   ├───rt640x64.inf_amd64_6737e15a71cff82d
+│   │   ├───rt640x64.inf_amd64_8984d8483eef476c
+│   │   ├───rt640x64.inf_amd64_9ec367f52884d09c
+│   │   ├───rtkfilter.inf_amd64_2a403c0b6dcc02d1
+│   │   ├───rtkfilter.inf_amd64_5c51c25f11e04b14
+│   │   ├───rtsuersdo.inf_amd64_f1d189feccee4cf7
+│   │   ├───rtux64w10.inf_amd64_d6132e4c7fe2fac6
+│   │   ├───rtvdevx64.inf_amd64_7b972df4e09f9463
+│   │   ├───rtwlanu_oldic.inf_amd64_1a82423cc076e882
+│   │   ├───sbp2.inf_amd64_1d08bca921956372
+│   │   ├───scmbus.inf_amd64_5fe1f2391ca08149
+│   │   ├───scmvolume.inf_amd64_6957cfb7d6fea5c7
+│   │   ├───scrawpdo.inf_amd64_466615aad3be8e26
+│   │   ├───scsidev.inf_amd64_55176c1890d480fe
+│   │   ├───scunknown.inf_amd64_90993a57907d9959
+│   │   ├───sdbus.inf_amd64_0a1ca877d721dcf0
+│   │   ├───sdflauncher.inf_amd64_1ea082c6cf8f6982
+│   │   ├───sdfrd.inf_amd64_25779da6eca4810a
+│   │   ├───sdstor.inf_amd64_0d2a33dd67a36577
+│   │   ├───seapo64.inf_amd64_5662dd8d5bbd07b9
+│   │   ├───seapo64.inf_amd64_dc40a1bbbf53bd9c
+│   │   ├───seapo64ext.inf_amd64_eb4cba869b380134
+│   │   ├───sensorsalsdriver.inf_amd64_a6da30fe583368a4
+│   │   ├───sensorshidclassdriver.inf_amd64_b5ae080ff669eab3
+│   │   ├───sensorsservicedriver.inf_amd64_4761deffedf4e12e
+│   │   ├───sisraid2.inf_amd64_845e008c32615283
+│   │   ├───sisraid4.inf_amd64_65ab84e9830f6f4b
+│   │   ├───skylakesystem.inf_amd64_a8f5707f144338f4
+│   │   ├───skylakesystemgmm.inf_amd64_ed7669649cae5dc1
+│   │   ├───smartsamd.inf_amd64_2238284d493e89f4
+│   │   ├───smrdisk.inf_amd64_f945aad6094163f4
+│   │   ├───smrvolume.inf_amd64_9a3d52a168ca8fee
+│   │   ├───spaceport.inf_amd64_1d7fffaca0429fac
+│   │   ├───stexstor.inf_amd64_fefc1160d15aa667
+│   │   ├───sti.inf_amd64_096c9e42fe4749d2
+│   │   ├───storfwupdate.inf_amd64_e57f4de14d125fac
+│   │   ├───stornvme.inf_amd64_b71dfc19e9acb838
+│   │   ├───storufs.inf_amd64_4bf6d33d58212336
+│   │   ├───sunrisepoint-lpsdhost.inf_amd64_a41dfa985c7de5e8
+│   │   ├───sunrisepoint-lpsystem.inf_amd64_05cef5d663d44ede
+│   │   ├───sunrisepoint-lpsystemlpss.inf_amd64_f511558eb55fd3e1
+│   │   ├───sunrisepoint-lpsystemnorthpeak.inf_amd64_9a3a26adb781e374
+│   │   ├───sunrisepoint-lpsystemthermal.inf_amd64_1d7a5a604517a7c5
+│   │   ├───swenum.inf_amd64_16a14542b63c02af
+│   │   ├───synahpextdmic.inf_amd64_654aa440e6340829
+│   │   ├───synapticsapo.inf_amd64_6f8eccf605d4ab79
+│   │   ├───synapticsapo.inf_amd64_a74c8e484374a33f
+│   │   ├───synapticsapo.inf_amd64_bf5b5bb3cbe57972
+│   │   ├───systemfirmware.inf_amd64_1a1e9af62465be47
+│   │   ├───systemfirmware.inf_amd64_2c72adff763a2ec2
+│   │   ├───tape.inf_amd64_bf051ca3546a5bf3
+│   │   ├───tdibth.inf_amd64_e1022e6b4f7ab56d
+│   │   ├───termkbd.inf_amd64_a0634dcf2da1127e
+│   │   ├───termmou.inf_amd64_c4c8f901e3534194
+│   │   ├───tpm.inf_amd64_154e6da862a6dc30
+│   │   ├───tpmvsc.inf_amd64_9b03a5f041e8d2b2
+│   │   ├───transfercable.inf_amd64_911a60fb265ff111
+│   │   ├───tsgenericusbdriver.inf_amd64_bcfa5f586783921d
+│   │   ├───tsprint.inf_amd64_6066bc96a5f28b44
+│   │   │   └───amd64
+│   │   ├───tsusbhubfilter.inf_amd64_283a44fe508f0682
+│   │   ├───ts_generic.inf_amd64_b6cb67052996a0bf
+│   │   ├───ts_wpdmtp.inf_amd64_e0577000b188c16b
+│   │   ├───txei.inf_amd64_129c9052fdd9eb45
+│   │   │   └───x64
+│   │   ├───txei.inf_amd64_8ec60b5dd6164f06
+│   │   │   └───x64
+│   │   ├───uaspstor.inf_amd64_63788a81c4c628c5
+│   │   ├───ucmucsiacpiclient.inf_amd64_a233292790c69f03
+│   │   ├───uefi.inf_amd64_c1628ffa62c8e54c
+│   │   ├───ufxchipidea.inf_amd64_1c78775fffab6a0a
+│   │   ├───ufxsynopsys.inf_amd64_978099f98cc73ddf
+│   │   ├───uicciso.inf_amd64_32023cb966fd5c8c
+│   │   ├───uiccspb.inf_amd64_18454ae612999870
+│   │   ├───umbus.inf_amd64_b78a9c5b6fd62c27
+│   │   ├───umpass.inf_amd64_3daa9a904daf9501
+│   │   ├───unknown.inf_amd64_b8b0fe7bbc76405b
+│   │   ├───urschipidea.inf_amd64_78ad1c14e33df968
+│   │   ├───urssynopsys.inf_amd64_057fa37902020500
+│   │   ├───usb.inf_amd64_683fd853c8b8a4db
+│   │   ├───usbaudio2.inf_amd64_8d164ac6f7088f97
+│   │   ├───usbcciddriver.inf_amd64_400a61104320a399
+│   │   ├───usbcir.inf_amd64_a19f675674962ae4
+│   │   ├───usbhub3.inf_amd64_6a68abcc31aaa333
+│   │   ├───usbncm.inf_amd64_9957a38c3d2283ed
+│   │   ├───usbnet.inf_amd64_9e6bb7a4b7338267
+│   │   ├───usbport.inf_amd64_254cd5ae09de6b08
+│   │   ├───usbprint.inf_amd64_0d7372b1ae8927e4
+│   │   ├───usbser.inf_amd64_8de53ed035d71856
+│   │   ├───usbstor.inf_amd64_2be0e52237040d42
+│   │   ├───usbtabletdevice.inf_amd64_786e6506b8b3887a
+│   │   ├───usbvideo.inf_amd64_16aab9c2171830d2
+│   │   ├───usbxhci.inf_amd64_c134a971d5a10c1c
+│   │   ├───vboxnetadp6.inf_amd64_fe5120c35ce9f98d
+│   │   ├───vboxnetlwf.inf_amd64_2336579a20b9bebb
+│   │   ├───vboxusb.inf_amd64_7804817a080d29bc
+│   │   ├───vca.inf_amd64_6bbc643de0df118d
+│   │   ├───vdrvroot.inf_amd64_5dbe5e81fafe4636
+│   │   ├───vhdmp.inf_amd64_5f05c21d7402eccc
+│   │   ├───virtdisk.inf_amd64_9a7f42b85c7def50
+│   │   ├───virtualdisplayadapter.inf_amd64_bcc7550a6e285f92
+│   │   ├───vkdevice.inf_amd64_6686a8dc27f41ab7
+│   │   ├───vk_comp.inf_amd64_6e8ed8c77bde8644
+│   │   ├───volmgr.inf_amd64_b98e2b928f71a2b1
+│   │   ├───volsnap.inf_amd64_ce438b6e0c5b1af2
+│   │   ├───volume.inf_amd64_bfabc750039f8ac1
+│   │   ├───vrd.inf_amd64_81fbd405ff2470fc
+│   │   ├───vsmraid.inf_amd64_3d2bbc45931b8232
+│   │   ├───vstxraid.inf_amd64_300cb04282659e6d
+│   │   ├───v_mscdsc.inf_amd64_05925c79fbad7433
+│   │   ├───wave.inf_amd64_8e8496aa33c0a7f6
+│   │   ├───wceisvista.inf_amd64_07ad61d07466a58a
+│   │   ├───wdmaudio.inf_amd64_cb639d1f182bc449
+│   │   ├───wdma_usb.inf_amd64_e879d41db6fd1ab8
+│   │   ├───wdmvsc.inf_amd64_8666ee4da6ad6325
+│   │   ├───wfcvsc.inf_amd64_dfe08f401a2eedbc
+│   │   ├───wfpcapture.inf_amd64_54cf91ab0e4c9ac2
+│   │   ├───wgencounter.inf_amd64_f496147578cad554
+│   │   ├───whvcrash.inf_amd64_1173082afb4becfd
+│   │   ├───whyperkbd.inf_amd64_6c54f73a58d5fb2c
+│   │   ├───windowstrustedrtproxy.inf_amd64_db5be14d5e02560f
+│   │   ├───winusb.inf_amd64_ced441476847bd1a
+│   │   ├───wirelessbuttondriver.inf_amd64_791854a399698f4d
+│   │   ├───wirelessbuttondriver.inf_amd64_e07fc09478550c3f
+│   │   ├───wmbclass_wmc_union.inf_amd64_a02e4111c770770d
+│   │   ├───wmiacpi.inf_amd64_4ab67656039b026b
+│   │   ├───wnetvsc.inf_amd64_7cbdf2bb1b105414
+│   │   ├───wnetvsc_vfpp.inf_amd64_9ce6f68c11eede58
+│   │   ├───wpdcomp.inf_amd64_d5fc5f7282c9bafb
+│   │   ├───wpdfs.inf_amd64_1183fd0f13045f2e
+│   │   ├───wpdmtp.inf_amd64_42b97498c7087292
+│   │   ├───wpdmtphw.inf_amd64_1aae998f86058cec
+│   │   ├───ws3cap.inf_amd64_6cf8ea2249844b50
+│   │   ├───wsdprint.inf_amd64_b616bed30e8928ca
+│   │   ├───wsdscdrv.inf_amd64_416a5877e9180787
+│   │   ├───wstorflt.inf_amd64_8375a9378e7227d5
+│   │   ├───wstorvsc.inf_amd64_50cb8ebb1c9584af
+│   │   ├───wsynth3dvsc.inf_amd64_1a08a3b6cd493e1f
+│   │   ├───wudfusbcciddriver.inf_amd64_a084e687a06b255f
+│   │   ├───wvid.inf_amd64_0ab1ad45d910072b
+│   │   ├───wvmbus.inf_amd64_b3e8f3ce60e5c8b5
+│   │   ├───wvmbushid.inf_amd64_fd2fe159a9daf508
+│   │   ├───wvmbusvideo.inf_amd64_c531b5e68fd6f6bf
+│   │   ├───wvmgid.inf_amd64_3a0240393de08f95
+│   │   ├───wvmic.inf_amd64_ae02676ac3e3c474
+│   │   ├───wvmic_ext.inf_amd64_34d742f3550dabd2
+│   │   ├───wvmic_guestinterface.inf_amd64_192114845ec44b66
+│   │   ├───wvmic_heartbeat.inf_amd64_ad33c2d1c7a3023e
+│   │   ├───wvmic_kvpexchange.inf_amd64_b3c17aa69dce1e0c
+│   │   ├───wvmic_shutdown.inf_amd64_bce6891915e70bbf
+│   │   ├───wvmic_timesync.inf_amd64_aa4bfe1897922114
+│   │   ├───wvpci.inf_amd64_86afbe8940682d27
+│   │   ├───xboxgip.inf_amd64_ad4358a36144c47c
+│   │   ├───xboxgipsynthetic.inf_amd64_9aa94bcf077169a1
+│   │   ├───xinputhid.inf_amd64_f44d0aeec735b5a6
+│   │   ├───xusb22.inf_amd64_d0f2fd4c931f4672
+│   │   └───ykinx64.inf_amd64_0bbd8466b526ef26
+│   └───Temp
+├───DRVSTORE
+│   ├───intelhaxm_232D2E571D83F7D78D14ACBC9ADEEFA4266EEEE8
+│   ├───VBoxSup_A6E815101814541D3815056F5B0DEF4C027A3FD7
+│   └───VBoxUSBMon_7ED5D56AAAEDB9E7FA6DC06A39E228DC125C4210
+├───el-GR
+├───en
+├───en-GB
+├───en-US
+│   └───Licenses
+│       ├───OEM
+│       │   └───Core
+│       ├───Volume
+│       │   └───Core
+│       └───_Default
+│           └───Core
+├───es-ES
+├───es-MX
+├───et-EE
+├───ff-Adlm-SN
+├───fi-FI
+├───fr-CA
+├───fr-FR
+├───FxsTmp
+├───GroupPolicyUsers
+├───he-IL
+├───hr-HR
+├───hu-HU
+├───Hydrogen
+│   └───BakedPlugins
+│       ├───Animation
+│       ├───Fx
+│       │   └───textures
+│       └───Physics
+├───ias
+├───icsxml
+├───id-ID
+├───IME
+│   ├───IMEJP
+│   │   └───APPLETS
+│   ├───IMEKR
+│   │   ├───APPLETS
+│   │   └───DICTS
+│   ├───IMETC
+│   │   └───applets
+│   └───SHARED
+│       └───res
+├───inetsrv
+├───InputMethod
+│   ├───CHS
+│   ├───CHT
+│   ├───JPN
+│   └───SHARED
+├───Intel
+│   ├───DPTF
+│   └───iCLS Client
+│       ├───conf
+│       ├───Documents
+│       ├───lib
+│       └───lib32
+├───Ipmi
+├───it-IT
+├───ja-jp
+├───Keywords
+├───ko-KR
+├───Licenses
+│   └───neutral
+│       ├───OEM
+│       │   └───Core
+│       ├───Volume
+│       │   └───Core
+│       └───_Default
+│           └───Core
+├───LogFiles
+│   ├───HTTPERR
+│   ├───setupcln
+│   ├───SQM
+│   └───WMI
+│       ├───Intel
+│       │   └───iCLSClient
+│       └───RtBackup
+├───Logs
+├───lt-LT
+├───lv-LV
+├───MailContactsCalendarSync
+├───Microsoft
+├───migration
+│   └───en-US
+├───migwiz
+│   ├───dlmanifests
+│   │   ├───Microsoft-ActiveDirectory-WebServices-DL
+│   │   ├───Microsoft-Windows-ADFS-DL
+│   │   ├───Microsoft-Windows-Bluetooth-Config
+│   │   ├───Microsoft-Windows-COM-ComPlus-Setup-DL
+│   │   ├───Microsoft-Windows-COM-DTC-Setup-DL
+│   │   ├───Microsoft-Windows-DirectoryServices-ADAM-DL
+│   │   ├───Microsoft-Windows-IE-ESC
+│   │   ├───Microsoft-Windows-MediaPlayer
+│   │   ├───Microsoft-Windows-msmq-messagingcoreservice
+│   │   ├───Microsoft-Windows-StorageMigration
+│   │   ├───Microsoft-Windows-TapiSetup
+│   │   ├───Microsoft-Windows-TextServicesFramework-Migration-DL
+│   │   └───Microsoft-Windows-WMI-Core
+│   ├───en-US
+│   └───replacementmanifests
+│       ├───hwvid-migration-2
+│       ├───microsoft-activedirectory-webservices
+│       ├───microsoft-international-core
+│       ├───microsoft-windows-audio-mmecore-other
+│       ├───Microsoft-Windows-COM-ComPlus-Setup
+│       ├───Microsoft-Windows-DirectoryServices-ADAM-Client
+│       ├───microsoft-windows-iis-rm
+│       ├───Microsoft-Windows-Mup
+│       ├───microsoft-windows-ndis
+│       ├───Microsoft-Windows-OfflineFiles-Core
+│       ├───Microsoft-Windows-RasApi-Mig
+│       ├───Microsoft-Windows-RasServer-MigPlugin
+│       ├───microsoft-windows-shmig
+│       ├───Microsoft-Windows-StorageMigration
+│       ├───Microsoft-Windows-TerminalServices-AppServer-Licensing
+│       ├───Microsoft-Windows-TerminalServices-LicenseServer
+│       ├───Microsoft-Windows-TextServicesFramework-Migration
+│       ├───SppMig
+│       ├───Usb
+│       └───WindowsSearchEngine
+├───MRT
+│   └───4E7B66E3-987E-4788-BBB3-A5030922FC8D
+├───MSDRM
+├───MsDtc
+│   └───Trace
+├───MUI
+│   ├───0409
+│   └───dispspec
+├───my-mm
+├───nb-NO
+├───NDF
+├───networklist
+│   └───icons
+│       └───StockIcons
+├───nl-NL
+├───oobe
+│   ├───en-US
+│   ├───Info
+│   │   ├───10
+│   │   │   └───1033
+│   │   ├───134
+│   │   │   └───1033
+│   │   ├───202
+│   │   │   └───1033
+│   │   ├───244
+│   │   │   └───1033
+│   │   ├───252
+│   │   │   └───1033
+│   │   ├───322
+│   │   │   └───1033
+│   │   ├───337
+│   │   │   └───1033
+│   │   └───Default
+│   │       └───1033
+│   └───SetupPlatform
+├───OpenSSH
+├───osa-Osge-001
+├───PerceptionSimulation
+│   ├───Assets
+│   ├───en-US
+│   └───pris
+├───pl-PL
+├───PointOfService
+│   └───ProtocolProviders
+│       └───en-US
+├───Printing_Admin_Scripts
+│   └───en-US
+├───ProximityToast
+├───pt-BR
+├───pt-PT
+├───ras
+│   └───SSTPProxy
+├───RasToast
+├───Recovery
+├───restore
+├───ro-RO
+├───ru-RU
+├───SecureBootUpdates
+├───setup
+│   └───en-US
+├───Sgrm
+├───ShellExperiences
+├───si-lk
+├───sk-SK
+├───sl-SI
+├───SleepStudy
+│   └───ScreenOn
+├───slmgr
+│   └───0409
+├───SMI
+│   ├───Manifests
+│   ├───Schema
+│   └───Store
+│       └───Machine
+├───Speech
+│   ├───Common
+│   │   └───en-US
+│   ├───Engines
+│   │   ├───SR
+│   │   │   └───en-US
+│   │   └───TTS
+│   └───SpeechUX
+│       └───en-US
+├───Speech_OneCore
+│   ├───common
+│   │   ├───de-DE
+│   │   ├───en-AU
+│   │   ├───en-CA
+│   │   ├───en-GB
+│   │   ├───en-US
+│   │   ├───es-ES
+│   │   ├───es-MX
+│   │   ├───fr-CA
+│   │   ├───fr-FR
+│   │   ├───id-ID
+│   │   ├───it-IT
+│   │   ├───ja-JP
+│   │   └───zh-CN
+│   ├───Engines
+│   │   ├───SR
+│   │   └───TTS
+│   └───VoiceActivation
+│       └───en-US
+├───spool
+│   ├───drivers
+│   │   ├───ARM64
+│   │   ├───color
+│   │   ├───IA64
+│   │   ├───W32X86
+│   │   │   ├───3
+│   │   │   └───PCC
+│   │   └───x64
+│   │       ├───3
+│   │       │   └───en-US
+│   │       ├───PCC
+│   │       ├───{1647C2ED-DAB4-4555-B4B3-47DC16C091CA}
+│   │       └───{5F883213-57FC-4BE3-89DB-54A3548ED205}
+│   ├───PRINTERS
+│   ├───prtprocs
+│   │   └───x64
+│   ├───SERVERS
+│   ├───tools
+│   │   ├───Microsoft Print To PDF
+│   │   └───Microsoft XPS Document Writer
+│   └───V4Dirs
+│       ├───21466405-EBC0-4332-8432-1E0626EF3417
+│       ├───279CA2EE-B0B8-4E7A-AF2D-612EF0AFA9C0
+│       ├───293B88B9-28E4-4CCD-BA05-E67761480B43
+│       ├───2E5ABBDC-2A98-4E39-8C9E-CB1262F1E5D4
+│       ├───31BE3F3A-8C5E-4D73-AA24-C64874207E83
+│       ├───4B4E8227-FDD1-4CEB-A624-75ABB7613B7A
+│       ├───6928C207-BC1F-4AC8-B0A1-D84BAEAA46FC
+│       ├───89C793D4-7EFD-41D2-9C02-0A88460C77D2
+│       ├───B3AC3FEA-17E5-4B49-807C-FF23F1FF663B
+│       ├───C7B34067-ECB1-48FA-864B-44747D256C1D
+│       ├───CAFA2BE1-4B21-4F9F-9D21-3DE2B981F377
+│       ├───E1F0F8E5-88B2-4CA8-8A6E-4FCB6FDE2DDC
+│       ├───E2C8B3FB-C99A-4131-B70F-5C9ABC602AA4
+│       ├───EB5D3A26-99E6-4327-BA05-0E4255435A40
+│       └───EF54EFF6-692C-43E3-A3F7-E927E782741B
+├───spp
+│   ├───plugin-manifests-signed
+│   ├───store
+│   │   └───2.0
+│   │       └───cache
+│   └───tokens
+│       ├───issuance
+│       ├───pkeyconfig
+│       ├───ppdlic
+│       ├───rules
+│       └───skus
+│           ├───Core
+│           └───CoreSingleLanguage
+├───sppui
+├───sr-Latn-RS
+├───sru
+├───sv-SE
+├───Sysprep
+│   ├───ActionFiles
+│   └───en-US
+├───SystemResetPlatform
+│   └───en-US
+├───ta-in
+├───ta-lk
+├───Tasks
+│   ├───Avira
+│   │   └───System Speedup
+│   │       └───Delayed Startup
+│   │           ├───All users
+│   │           └───user
+│   ├───Hewlett-Packard
+│   │   ├───HP Active Health
+│   │   ├───HP Diagnostics
+│   │   └───HP Support Assistant
+│   ├───Microsoft
+│   │   ├───OneCore
+│   │   │   └───DirectX
+│   │   ├───Windows
+│   │   │   ├───.NET Framework
+│   │   │   ├───Active Directory Rights Management Services Client
+│   │   │   ├───AppID
+│   │   │   ├───Application Experience
+│   │   │   ├───ApplicationData
+│   │   │   ├───AppListBackup
+│   │   │   ├───AppxDeploymentClient
+│   │   │   ├───Autochk
+│   │   │   ├───BitLocker
+│   │   │   ├───Bluetooth
+│   │   │   ├───BrokerInfrastructure
+│   │   │   ├───CertificateServicesClient
+│   │   │   ├───Chkdsk
+│   │   │   ├───Clip
+│   │   │   ├───CloudExperienceHost
+│   │   │   ├───Customer Experience Improvement Program
+│   │   │   ├───Data Integrity Scan
+│   │   │   ├───Defrag
+│   │   │   ├───Device Information
+│   │   │   ├───Device Setup
+│   │   │   ├───DeviceDirectoryClient
+│   │   │   ├───Diagnosis
+│   │   │   ├───DirectX
+│   │   │   ├───DiskCleanup
+│   │   │   ├───DiskDiagnostic
+│   │   │   ├───DiskFootprint
+│   │   │   ├───DUSM
+│   │   │   ├───EDP
+│   │   │   ├───EnterpriseMgmt
+│   │   │   ├───ExploitGuard
+│   │   │   ├───Feedback
+│   │   │   │   └───Siuf
+│   │   │   ├───FileHistory
+│   │   │   ├───Flighting
+│   │   │   │   ├───FeatureConfig
+│   │   │   │   └───OneSettings
+│   │   │   ├───HelloFace
+│   │   │   ├───Input
+│   │   │   ├───InstallService
+│   │   │   ├───International
+│   │   │   ├───LanguageComponentsInstaller
+│   │   │   ├───License Manager
+│   │   │   ├───Live
+│   │   │   │   └───Roaming
+│   │   │   ├───Location
+│   │   │   ├───Maintenance
+│   │   │   ├───Management
+│   │   │   │   └───Provisioning
+│   │   │   ├───Maps
+│   │   │   ├───MemoryDiagnostic
+│   │   │   ├───Mobile Broadband Accounts
+│   │   │   ├───MUI
+│   │   │   ├───Multimedia
+│   │   │   ├───NetTrace
+│   │   │   ├───NlaSvc
+│   │   │   ├───PI
+│   │   │   ├───PLA
+│   │   │   │   └───System
+│   │   │   ├───Plug and Play
+│   │   │   ├───Power Efficiency Diagnostics
+│   │   │   ├───Printing
+│   │   │   ├───PushToInstall
+│   │   │   ├───Ras
+│   │   │   ├───RecoveryEnvironment
+│   │   │   ├───Registry
+│   │   │   ├───RemoteApp and Desktop Connections Update
+│   │   │   ├───RemoteAssistance
+│   │   │   ├───RemovalTools
+│   │   │   ├───RestartManager
+│   │   │   ├───Servicing
+│   │   │   ├───SettingSync
+│   │   │   ├───Setup
+│   │   │   ├───SharedPC
+│   │   │   ├───Shell
+│   │   │   ├───SMB
+│   │   │   ├───SoftwareProtectionPlatform
+│   │   │   ├───SpacePort
+│   │   │   ├───Speech
+│   │   │   ├───StateRepository
+│   │   │   ├───Storage Tiers Management
+│   │   │   ├───Subscription
+│   │   │   ├───SyncCenter
+│   │   │   ├───Sysmain
+│   │   │   ├───SystemRestore
+│   │   │   ├───Task Manager
+│   │   │   ├───TaskScheduler
+│   │   │   ├───TextServicesFramework
+│   │   │   ├───Time Synchronization
+│   │   │   ├───Time Zone
+│   │   │   ├───TPM
+│   │   │   ├───UNP
+│   │   │   ├───UpdateOrchestrator
+│   │   │   ├───UPnP
+│   │   │   ├───USB
+│   │   │   ├───User Profile Service
+│   │   │   ├───WaaSMedic
+│   │   │   ├───WCM
+│   │   │   ├───WDI
+│   │   │   ├───Windows Activation Technologies
+│   │   │   ├───Windows Defender
+│   │   │   ├───Windows Error Reporting
+│   │   │   ├───Windows Filtering Platform
+│   │   │   ├───Windows Media Sharing
+│   │   │   ├───Windows Subsystem For Linux
+│   │   │   ├───WindowsBackup
+│   │   │   ├───WindowsColorSystem
+│   │   │   ├───WindowsUpdate
+│   │   │   ├───Wininet
+│   │   │   ├───WlanSvc
+│   │   │   ├───WOF
+│   │   │   ├───Work Folders
+│   │   │   ├───Workplace Join
+│   │   │   ├───WS
+│   │   │   └───WwanSvc
+│   │   └───XblGameSave
+│   ├───Mozilla
+│   └───OfficeSoftwareProtectionPlatform
+├───Tasks_Migrated
+│   ├───Hewlett-Packard
+│   │   └───HP Support Assistant
+│   ├───McAfee
+│   └───Microsoft
+│       ├───Windows
+│       │   ├───.NET Framework
+│       │   ├───Active Directory Rights Management Services Client
+│       │   ├───AppID
+│       │   ├───Application Experience
+│       │   ├───ApplicationData
+│       │   ├───AppxDeploymentClient
+│       │   ├───Autochk
+│       │   ├───BitLocker
+│       │   ├───Bluetooth
+│       │   ├───BrokerInfrastructure
+│       │   ├───CertificateServicesClient
+│       │   ├───Chkdsk
+│       │   ├───Clip
+│       │   ├───CloudExperienceHost
+│       │   ├───Customer Experience Improvement Program
+│       │   ├───Data Integrity Scan
+│       │   ├───Defrag
+│       │   ├───Device Information
+│       │   ├───Device Setup
+│       │   ├───DeviceDirectoryClient
+│       │   ├───Diagnosis
+│       │   ├───DirectX
+│       │   ├───DiskCleanup
+│       │   ├───DiskDiagnostic
+│       │   ├───DiskFootprint
+│       │   ├───DUSM
+│       │   ├───EDP
+│       │   ├───ExploitGuard
+│       │   ├───Feedback
+│       │   │   └───Siuf
+│       │   ├───FileHistory
+│       │   ├───Flighting
+│       │   │   └───OneSettings
+│       │   ├───HelloFace
+│       │   ├───InstallService
+│       │   ├───LanguageComponentsInstaller
+│       │   ├───License Manager
+│       │   ├───Live
+│       │   │   └───Roaming
+│       │   ├───Location
+│       │   ├───Maintenance
+│       │   ├───Management
+│       │   │   └───Provisioning
+│       │   ├───Maps
+│       │   ├───MemoryDiagnostic
+│       │   ├───Mobile Broadband Accounts
+│       │   ├───MUI
+│       │   ├───Multimedia
+│       │   ├───NetTrace
+│       │   ├───NlaSvc
+│       │   ├───PI
+│       │   ├───PLA
+│       │   │   └───System
+│       │   ├───Plug and Play
+│       │   ├───Power Efficiency Diagnostics
+│       │   ├───Printing
+│       │   ├───PushToInstall
+│       │   ├───Ras
+│       │   ├───RecoveryEnvironment
+│       │   ├───Registry
+│       │   ├───RemoteApp and Desktop Connections Update
+│       │   ├───RemoteAssistance
+│       │   ├───Servicing
+│       │   ├───SettingSync
+│       │   ├───Setup
+│       │   ├───SharedPC
+│       │   ├───Shell
+│       │   ├───SMB
+│       │   ├───SoftwareProtectionPlatform
+│       │   ├───SpacePort
+│       │   ├───Speech
+│       │   ├───Storage Tiers Management
+│       │   ├───Subscription
+│       │   ├───SyncCenter
+│       │   ├───Sysmain
+│       │   ├───SystemRestore
+│       │   ├───Task Manager
+│       │   ├───TaskScheduler
+│       │   ├───TextServicesFramework
+│       │   ├───Time Synchronization
+│       │   ├───Time Zone
+│       │   ├───TPM
+│       │   ├───UNP
+│       │   ├───UpdateOrchestrator
+│       │   ├───UPnP
+│       │   ├───USB
+│       │   ├───User Profile Service
+│       │   ├───WaaSMedic
+│       │   ├───WCM
+│       │   ├───WDI
+│       │   ├───Windows Activation Technologies
+│       │   ├───Windows Defender
+│       │   ├───Windows Error Reporting
+│       │   ├───Windows Filtering Platform
+│       │   ├───Windows Media Sharing
+│       │   ├───Windows Subsystem For Linux
+│       │   ├───WindowsBackup
+│       │   ├───WindowsColorSystem
+│       │   ├───WindowsUpdate
+│       │   ├───Wininet
+│       │   ├───WlanSvc
+│       │   ├───WOF
+│       │   ├───Work Folders
+│       │   ├───Workplace Join
+│       │   ├───WS
+│       │   └───WwanSvc
+│       └───XblGameSave
+├───th-TH
+├───ti-et
+├───tr-TR
+├───uk-UA
+├───wbem
+│   ├───AutoRecover
+│   ├───en-US
+│   ├───Logs
+│   ├───MOF
+│   │   ├───bad
+│   │   └───good
+│   ├───Performance
+│   ├───repository
+│   ├───tmf
+│   └───xml
+├───WCN
+│   └───en-US
+├───WDI
+│   ├───LogFiles
+│   │   └───StartupInfo
+│   ├───{533a67eb-9fb5-473d-b884-958cf4b9c4a3}
+│   │   ├───{1de3a727-f233-4d3a-85b6-17e17b0c92d9}
+│   │   ├───{1f4bb1e2-6bee-4da1-95f4-48001ef501c1}
+│   │   ├───{2114f5ee-62ba-4707-b4e2-715c8b9bbeb0}
+│   │   ├───{22843b84-25c2-4402-bbfd-c84ce985f8e4}
+│   │   ├───{2ae46508-82e1-4391-8db1-76bf18b681c3}
+│   │   ├───{3eade572-4bd2-475e-bfa2-30181d976f9a}
+│   │   ├───{50484096-2430-48b3-9e95-6fcfa2692093}
+│   │   ├───{52ce998c-13e4-4bac-a95b-c5cf8e5f03e6}
+│   │   ├───{57d6d182-819f-4f21-a043-5702facb2031}
+│   │   ├───{601caaa4-e884-4a4a-8ea8-877e75f78c8a}
+│   │   ├───{8b68d3bb-f4fa-4e36-a5d5-7bbeef215006}
+│   │   ├───{94ad83cd-1e5a-41dd-af28-6d7ecd4a29d0}
+│   │   ├───{9794fc88-d80f-4b4c-9e26-ae48a5df4a69}
+│   │   ├───{a383db42-5428-4cca-89c6-d8efe1f56daa}
+│   │   ├───{a44df588-4c8b-4d4f-ab6f-364b3d915707}
+│   │   ├───{a49f569f-d288-488a-9039-da09813a7f85}
+│   │   ├───{b2d68b8a-af5c-4606-887c-1fc2a1adf246}
+│   │   ├───{ba4712ad-4641-4c15-a5a9-5050ef010f75}
+│   │   ├───{babaebc4-2815-4388-a005-4cdd9485d594}
+│   │   ├───{c643490f-6b62-46e1-adb8-7cce403c4d83}
+│   │   ├───{cecc67c7-f40b-47ab-8ea0-42373ad686e8}
+│   │   ├───{cf8013b0-a375-4559-b394-f2e64ad375c7}
+│   │   ├───{d587576e-cfc7-457f-b844-86fd53e4658e}
+│   │   ├───{de3302b2-543e-4af3-bd1e-f9100f373de0}
+│   │   ├───{de86e105-db70-4786-9e06-362b2271e608}
+│   │   ├───{ded37567-dbce-4b33-9bb2-926b691abf1a}
+│   │   ├───{dff891c2-7952-4b0d-bcc0-0b18973ef78d}
+│   │   ├───{e9db5c51-1f55-4dad-ac3f-0b3487bc7409}
+│   │   ├───{eb60e3b0-3633-44fb-acd0-f31242db6013}
+│   │   └───{eef9641e-64b8-4ee9-97e7-2e1d59c2aa15}
+│   └───{86432a0b-3c7d-4ddf-a89c-172faa90485d}
+│       ├───{29433355-304a-4116-91fb-b8daeff4cf91}
+│       ├───{47b9a69c-8f8c-4f82-a124-27ae086c27c7}
+│       ├───{67db074e-dc54-4149-98ba-a879de93869c}
+│       ├───{70cad657-bb38-485d-8f2c-6a4e9e7d5282}
+│       └───{8fa6b556-44b2-4f8b-adcd-45a788fa3865}
+├───WinBioDatabase
+├───WinBioPlugIns
+│   ├───en-US
+│   └───FaceDriver
+│       └───amd64
+├───WindowsPowerShell
+│   └───v1.0
+│       ├───en
+│       ├───en-US
+│       ├───Examples
+│       ├───Modules
+│       │   ├───Appx
+│       │   │   └───en-US
+│       │   ├───CimCmdlets
+│       │   ├───ConfigDefender
+│       │   ├───ConfigDefenderPerformance
+│       │   ├───Defender
+│       │   ├───DirectAccessClientComponents
+│       │   ├───Dism
+│       │   │   └───en
+│       │   ├───DnsClient
+│       │   ├───EventTracingManagement
+│       │   ├───iSCSI
+│       │   ├───ISE
+│       │   ├───Microsoft.PowerShell.Archive
+│       │   │   └───en-US
+│       │   ├───Microsoft.PowerShell.Diagnostics
+│       │   ├───Microsoft.PowerShell.Host
+│       │   ├───Microsoft.PowerShell.LocalAccounts
+│       │   │   └───1.0.0.0
+│       │   │       └───en
+│       │   ├───Microsoft.PowerShell.Management
+│       │   ├───Microsoft.PowerShell.ODataUtils
+│       │   │   └───en-US
+│       │   ├───Microsoft.PowerShell.Security
+│       │   ├───Microsoft.PowerShell.Utility
+│       │   ├───Microsoft.WSMan.Management
+│       │   ├───MsDtc
+│       │   │   ├───en
+│       │   │   └───en-US
+│       │   ├───NetAdapter
+│       │   ├───NetConnection
+│       │   ├───NetEventPacketCapture
+│       │   ├───NetLbfo
+│       │   ├───NetNat
+│       │   ├───NetQos
+│       │   ├───NetSecurity
+│       │   │   └───en
+│       │   ├───NetSwitchTeam
+│       │   ├───NetTCPIP
+│       │   ├───NetworkConnectivityStatus
+│       │   ├───NetworkSwitchManager
+│       │   ├───NetworkTransition
+│       │   ├───PcsvDevice
+│       │   ├───PersistentMemory
+│       │   │   └───en
+│       │   ├───PnpDevice
+│       │   ├───PrintManagement
+│       │   ├───Provisioning
+│       │   ├───PSDiagnostics
+│       │   ├───PSScheduledJob
+│       │   ├───PSWorkflow
+│       │   ├───PSWorkflowUtility
+│       │   ├───ScheduledTasks
+│       │   ├───SmbWitness
+│       │   ├───StartLayout
+│       │   ├───Storage
+│       │   ├───StorageBusCache
+│       │   ├───TroubleshootingPack
+│       │   │   └───en-US
+│       │   ├───VpnClient
+│       │   │   └───en-US
+│       │   ├───Wdac
+│       │   ├───WindowsDeveloperLicense
+│       │   ├───WindowsErrorReporting
+│       │   ├───WindowsSearch
+│       │   │   └───en
+│       │   ├───WindowsUpdate
+│       │   └───WindowsUpdateProvider
+│       ├───Schemas
+│       │   └───PSMaml
+│       └───SessionConfig
+├───winevt
+│   ├───Logs
+│   └───TraceFormat
+├───WinMetadata
+├───winrm
+│   └───0409
+├───zh-CN
+└───zh-TW
+
+============================================================================================================
+15) netsh
+
+C:\WINDOWS\system32>netsh wlan show profile
+
+Profiles on interface Wi-Fi 2:
+
+Group policy profiles (read only)
+---------------------------------
+    <None>
+
+User profiles
+-------------
+    All User Profile     : Kandi
+    All User Profile     : gratisan ya
+    All User Profile     : HUAWEI-gvPT
+    All User Profile     : syahrul@proxyukk
+    All User Profile     : HOTSPOT KHUSUS KAUM DUAFA
+    All User Profile     : adam@ProxyUKK
+    All User Profile     : lantip@proxyUKK
+    All User Profile     : atthoriq@USPRAKTEK
+    All User Profile     : raja@USPRAKTEK
+    All User Profile     : naufal@USPRAKTEK
+    All User Profile     : adam@USPRAKTEK
+    All User Profile     : rioa@ProxyUKK
+    All User Profile     : Dr.Slump
+    All User Profile     : Adam@ProxyUKK
+    All User Profile     : P3K Ruang Bawah
+    All User Profile     : adam@PorxyUKK
+    All User Profile     : BantengMerah@ProxyUKK 2
+    All User Profile     : OPPO A5s
+    All User Profile     : BantengMerah@ProxyUKK
+    All User Profile     : kelompok1@proxyUKK
+    All User Profile     : asus@ProxyUKK
+    All User Profile     : syahrul@proxyUKK
+    All User Profile     : keisia@proxyUKK
+    All User Profile     : AndroidShare_5038
+    All User Profile     : syahrul@ProxyUKK
+    All User Profile     : Bruhh
+    All User Profile     : faisal@ProxyUKK
+    All User Profile     : Atthoriq@ProxyUKK
+    All User Profile     : faisa@lproxyUKK
+    All User Profile     : faisal@proxyUKK
+    All User Profile     : RISTIKAL NET
+    All User Profile     : adam@hotspot.id
+    All User Profile     : adam@smkn1.sch.id
+    All User Profile     : klompok1@sch.co.id
+    All User Profile     : kelompok1@schi.co.id
+    All User Profile     : kelompok1@tkj2
+    All User Profile     : yhahaha
+    All User Profile     : Redmi 9
+    All User Profile     : TAKAKO
+    All User Profile     : POCO
+    All User Profile     : LPBA MANDIRI
+    All User Profile     : No Conect
+    All User Profile     : No Conect 3
+    All User Profile     : GasGus
+    All User Profile     : No Conect 2
+
+============================================================================================================
+16) sfc /scannow memindai semua file sistem yang dilindungi dan menggantikan file rusak
+
+C:\WINDOWS\system32>sfc /scannow
+
+Beginning system scan.  This process will take some time.
+
+Beginning verification phase of system scan.
+Verification 100% complete.
+
+Windows Resource Protection did not find any integrity violations.
+
+============================================================================================================
+17) mkdir/md untuk membuat direktori baru
+18) chdir/cd untuk mengubah lokasi/posisi ke suatu direktori
+19) dir      untuk melihat daftar file dan sub-direktori
+
+C:\WINDOWS\system32>d:
+
+D:\>md test
+
+D:\>cd test
+
+D:\test>md testing
+
+D:\test>cd..
+
+D:\>dir test
+ Volume in drive D is DATA
+ Volume Serial Number is 78D4-243E
+
+ Directory of D:\test
+
+11/08/2022  12:09    <DIR>          .
+11/08/2022  12:09    <DIR>          ..
+11/08/2022  12:09    <DIR>          testing
+               0 File(s)              0 bytes
+               3 Dir(s)  499.284.189.184 bytes free
+
+============================================================================================================
+20) copy untuk mengcopy suatu file
+
+D:\>copy test.txt d:\test
+        1 file(s) copied.
+
+D:\>dir test
+ Volume in drive D is DATA
+ Volume Serial Number is 78D4-243E
+
+ Directory of D:\test
+
+11/08/2022  12:12    <DIR>          .
+11/08/2022  12:12    <DIR>          ..
+11/08/2022  12:11                 0 test.txt
+11/08/2022  12:09    <DIR>          testing
+               1 File(s)              0 bytes
+               3 Dir(s)  499.284.189.184 bytes free
+
+D:\>cd test
+
+============================================================================================================
+21)del untuk menghapus file
+
+D:\test>del test.txt
+
+D:\>dir test
+ Volume in drive D is DATA
+ Volume Serial Number is 78D4-243E
+
+ Directory of D:\test
+
+11/08/2022  12:26    <DIR>          .
+11/08/2022  12:26    <DIR>          ..
+11/08/2022  12:09    <DIR>          testing
+               0 File(s)              0 bytes
+               3 Dir(s)  499.284.189.184 bytes free
+
+============================================================================================================
+22)ren/rename untuk mengganti nama file
+
+D:\>ren test.txt teks.txt
+
+============================================================================================================
+23)cls membersihkan layar cmd
+
+D:\>cls
+
+============================================================================================================
+24)exit untuk keluar dari CMD
+
+D:\>exit
