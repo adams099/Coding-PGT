@@ -84,5 +84,5 @@ Merging branch readme yang dibuat di lokal ke default branch main
 Repo setelah Merge
 ![praktik 2 (15).png](https://www.dropbox.com/s/1nua9seho4htvnl/praktik%202%20%2815%29.png?dl=0&raw=1)
 
-Dan Commit setelah branch readme ke default branch main
+Dan Commit setelah branch readme ke default branch main (merge)
 ![praktik 2 (16).png](https://www.dropbox.com/s/nuj4tabd1v731ov/praktik%202%20%2816%29.png?dl=0&raw=1)
