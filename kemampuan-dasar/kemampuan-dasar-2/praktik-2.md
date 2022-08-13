@@ -6,14 +6,14 @@ Membuat Organizations dan membuat repo baru.
 ![praktik 2 (4).png](https://www.dropbox.com/s/tu0gh19neff534u/praktik%202%20%284%29.png?dl=0&raw=1)
 ![praktik 2 (5).png](https://www.dropbox.com/s/f36ankaug3rqgtg/praktik%202%20%285%29.png?dl=0&raw=1)
 
-========================================================================
+============================================================================================
 ## Menambahkan Team Members atau Collaboration
 Akun SecondDams adalah akun ke dua saya.
 ![praktik 2 (6).png](https://www.dropbox.com/s/u5l6h5bdlrdk6wv/praktik%202%20%286%29.png?dl=0&raw=1)
 ![praktik 2 (7).png](https://www.dropbox.com/s/hz90thsazf3pwem/praktik%202%20%287%29.png?dl=0&raw=1)
 ![praktik 2 (8).png](https://www.dropbox.com/s/1ojw14zkj6tkbzh/praktik%202%20%288%29.png?dl=0&raw=1)
 
-========================================================================
+============================================================================================
 ## Clone dan Membuat Branch
 Clone repo Organization-dan-Collab ke local dan push branch ke remote.
 
@@ -69,13 +69,13 @@ To https://github.com/Organization-dan-Collab/Organization-dan-Collab.git
  * [new branch]      readme -> readme
 ~~~
 
-========================================================================
+============================================================================================
 ## Pull Requests
 Pull requests dari branch yang dibuat dari lokal.
 ![praktik 2 (11).png](https://www.dropbox.com/s/k375cw0zyfobjzy/praktik%202%20%2811%29.png?dl=0&raw=1)
 ![praktik 2 (12).png](https://www.dropbox.com/s/d7kl33a3xjs48da/praktik%202%20%2812%29.png?dl=0&raw=1)
 
-========================================================================
+============================================================================================
 ## Merging
 Merging branch readme yang dibuat di lokal ke default branch main
 ![praktik 2 (13).png](https://www.dropbox.com/s/e9vcmx31mhjnfp9/praktik%202%20%2813%29.png?dl=0&raw=1)
