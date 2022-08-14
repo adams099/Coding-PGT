@@ -1,18 +1,19 @@
 @echo off
-title PGT KASUS CARI FILE JAVA
+title CODING PGT
 
 cls
 echo.
 for /f "tokens=*" %%I in ('dir /b /s *.java') do (
 if exist dir /b /s *.java (
-echo msgbox "Ada File Java Pada Direktori" > "%temp%\popup.vbs"
+echo msgbox "File Java Ditemukan" > "%temp%\popup.vbs"
 wscript.exe "%temp%\popup.vbs"
+echo Ada File Java Pada Direktori :
 echo %%I
 goto pilihan
 )
 )
 if %errorlevel% == 0 (
-echo msgbox "Tidak Ada File Java Pada Direktori" > "%temp%\popup.vbs"
+echo msgbox "Tidak Ditemukan File Java Pada Direktori" > "%temp%\popup.vbs"
 wscript.exe "%temp%\popup.vbs"
 goto exit
 )
@@ -20,8 +21,7 @@ goto exit
 
 :pilihan
 echo.
-echo pilih (y) untuk mengubah nama file, dan (N) untuk keluar
-set/p "pil= ->  Apakah anda ingin mengganti nama file (Y/N) ? :"
+set/p "pil= ->  Apakah Anda Ingin Mengganti Nama File (Y/N) ? :"
 echo.
 if %pil%==Y (
 set /p input="Masukan nama file baru : "
@@ -49,7 +49,7 @@ exit
 
 :norename
 echo.
-echo msgbox "Rename tidak berhasil" > "%temp%\popup.vbs"
+echo msgbox "Tidak Mengganti Nama File" > "%temp%\popup.vbs"
 wscript.exe "%temp%\popup.vbs"
 pause
 exit
