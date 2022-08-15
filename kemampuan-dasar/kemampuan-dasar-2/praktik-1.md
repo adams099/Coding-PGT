@@ -1,4 +1,4 @@
-##### Menjadikan suatu file ke Repository
+## Menjadikan suatu file ke Repository
 ~~~
 user@LAPTOP-Dams MINGW64 /d/Coding-PGT
 $ git init
@@ -15,7 +15,11 @@ Untracked files:
         kemampuan-dasar/
 
 nothing added to commit but untracked files present (use "git add" to track)
+~~~
 
+## Working Tree, Staging Area dan Commit
+Git add untuk memindahkan log/file perubahan dari repo ke Staging Area. Setelah berada di Staging Area gunakan git commit untuk meng-commit dan nantinya setiap commit akan tercatat di history.
+~~~
 user@LAPTOP-Dams MINGW64 /d/Coding-PGT (master)
 $ git add .
 
@@ -37,7 +41,7 @@ $ git commit -m "membuat repo"
  create mode 100644 kemampuan-dasar/kemampuan-dasar-1/latihan/cmdline.txt
 ~~~
 
-##### Remote Push dari lokal ke github
+## Remote. Push dari lokal ke github
 Saya tidak Cloning Repo yang ada di github ke lokal karna sebagian besar filenya berada di lokal.
 ~~~
 user@LAPTOP-Dams MINGW64 /d/Coding-PGT (master)

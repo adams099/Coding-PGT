@@ -1,8 +1,8 @@
 ## Teknologi Informasi
-Teknologi Informasi , atau dalam bahasa Inggris dikenal dengan istilah Information technology adalah istilah umum untuk teknologi apa pun yang membantu manusia dalam membuat, mengubah, menyimpan, mengomunikasikan dan/atau menyebarkan informasi.
+Teknologi Informasi , atau dalam bahasa Inggris dikenal dengan istilah Information technology adalah istilah umum untuk teknologi apa pun yang membantu manusia dalam membuat, mengubah, menyimpan, mengkomunikasikan atau menyebarkan informasi.
 
 #### Sejarah
-Pada awal sejarah, manusia bertukar informasi melalui bahasa. Setelah itu teknologi penyampaian informasi berkembang melalui gambar. Dengan gambar jangkauan informasi bisa lebih jauh dan ditemukannya alfabet dan angka arabik memudahkan cara penyampaian informasi yang lebih efisien dari cara yang sebelumnya, kemudian teknologi percetakan memungkinkan pengiriman informasi lebih cepat lagi dan teknologi elektronik seperti radio, telegram mengakibatkan informasi menjadi lebih cepat tersebar. Dan karna teknologi informasi, tercipta dan berkembangnya beberapa bidang dalam software antaranya application software, operating system, software development tool dan firmware.
+Pada awal sejarah, manusia bertukar informasi melalui bahasa. Setelah itu teknologi penyampaian informasi berkembang melalui gambar. Dengan gambar jangkauan informasi bisa lebih jauh dan ditemukannya alfabet dan angka arabik memudahkan cara penyampaian informasi yang lebih efisien dari cara yang sebelumnya, kemudian teknologi percetakan memungkinkan pengiriman informasi lebih cepat lagi dan teknologi elektronik seperti radio, telegram mengakibatkan informasi menjadi lebih cepat tersebar. Dan karna teknologi informasi, tercipta dan berkembangnya beberapa bidang dalam software antaranya application software, operating system, software development tool, firmware dan lainya.
 
 #### Informasi Umum
 TI adalah bidang pengelolaan teknologi dan mencakup berbagai bidang yang termasuk tetapi tidak terbatas pada hal-hal seperti proses, perangkat lunak komputer, sistem informasi, perangkat keras komputer, bahasa pemrograman, dan data konstruksi. Singkatnya, apa yang membuat data, informasi atau pengetahuan yang dirasakan dalam format visual apapun, melalui setiap mekanisme distribusi multimedia, dianggap bagian dari TI.
@@ -11,7 +11,7 @@ TI adalah bidang pengelolaan teknologi dan mencakup berbagai bidang yang termasu
 - Bidang Pendidikan
 - Bidang Ekonomi
 - Bidang Sosial
-- kesehatan
+- Dan Kesehatan
 
 
 ## Perbedaan antara Ilmu Komputer dan Informatika
@@ -22,6 +22,7 @@ Ilmu komputer adalah studi tentang teori, eksperimen, dan rekayasa yang membentu
 Informatika adalah cabang dari rekayasa informasi. Ini melibatkan praktik pemrosesan informasi dan rekayasa sistem informasi. Sebagai bidang akademik, ini adalah bentuk terapan dari ilmu informasi menyebabkan studi informatika dengan computational, matematika, biologi, cognitive dan social aspects, termasuk studi tentang dampak sosial dari teknologi informasi.
 
 > Kesimpulanya Ilmu komputer adalah studi tentang komputer dan Informatika adalah studi menggunakan komputer
+[sources](https://cs.stackexchange.com/questions/81408/whats-the-difference-between-computer-science-and-informatics)
 
 
 ##  Software development

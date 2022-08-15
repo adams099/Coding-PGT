@@ -1,0 +1,1 @@
+powershell.exe -noexit help D:\PGT\Coding-PGT\kemampuan-dasar\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime.ps1

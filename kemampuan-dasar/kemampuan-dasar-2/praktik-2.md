@@ -1,9 +1,15 @@
 ## Membuat Organizations 
-Membuat Organizations dan membuat repo baru.
+Membuat Organizations
 ![praktik 2 (1).png](https://www.dropbox.com/s/uor3grhsatqn18h/praktik%202%20%281%29.png?dl=0&raw=1)
+
+Menambahkan Member
 ![praktik 2 (2).png](https://www.dropbox.com/s/tbum47ug17xtm7h/praktik%202%20%282%29.png?dl=0&raw=1)
 ![praktik 2 (3).png](https://www.dropbox.com/s/v6w8pqwqgcpjebi/praktik%202%20%283%29.png?dl=0&raw=1)
+
+Tampilan awal home page dari Organization
 ![praktik 2 (4).png](https://www.dropbox.com/s/tu0gh19neff534u/praktik%202%20%284%29.png?dl=0&raw=1)
+
+Membuat repo baru di Organization
 ![praktik 2 (5).png](https://www.dropbox.com/s/f36ankaug3rqgtg/praktik%202%20%285%29.png?dl=0&raw=1)
 
 ============================================================================================
@@ -22,7 +28,7 @@ Repo sebelum Merge
 
 Terminal Git
 ~~~
-user@LAPTOP-Dams MINGW64 /d/AA adams099
+user@LAPTOP-Dams MINGW64 /d/PGT/adams099
 $ git clone https://github.com/Organization-dan-Collab/Organization-dan-Collab.git
 Cloning into 'Organization-dan-Collab'...
 remote: Enumerating objects: 6, done.
@@ -31,27 +37,27 @@ remote: Compressing objects: 100% (3/3), done.
 remote: Total 6 (delta 0), reused 1 (delta 0), pack-reused 0
 Receiving objects: 100% (6/6), done.
 
-user@LAPTOP-Dams MINGW64 /d/AA adams099
+user@LAPTOP-Dams MINGW64 /d/PGT/adams099
 $ cd Organization-dan-Collab
 
-user@LAPTOP-Dams MINGW64 /d/AA adams099/Organization-dan-Collab (main)
+user@LAPTOP-Dams MINGW64 /d/PGT/adams099/Organization-dan-Collab (main)
 $ git checkout -b readme
 Switched to a new branch 'readme'
 
-user@LAPTOP-Dams MINGW64 /d/AA adams099/Organization-dan-Collab (readme)
+user@LAPTOP-Dams MINGW64 /d/PGT/adams099/Organization-dan-Collab (readme)
 $ git add .
 
-user@LAPTOP-Dams MINGW64 /d/AA adams099/Organization-dan-Collab (readme)
+user@LAPTOP-Dams MINGW64 /d/PGT/adams099/Organization-dan-Collab (readme)
 $ git commit -m "edit -1 readme"
 [readme e1ec709] edit -1 readme
  1 file changed, 2 insertions(+)
 
-user@LAPTOP-Dams MINGW64 /d/AA adams099/Organization-dan-Collab (readme)
+user@LAPTOP-Dams MINGW64 /d/PGT/adams099/Organization-dan-Collab (readme)
 $ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
-user@LAPTOP-Dams MINGW64 /d/AA adams099/Organization-dan-Collab (main)
+user@LAPTOP-Dams MINGW64 /d/PGT/adams099/Organization-dan-Collab (main)
 $ git push origin readme
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
@@ -77,12 +83,12 @@ Pull requests dari branch yang dibuat dari lokal.
 
 ============================================================================================
 ## Merging
-Merging branch readme yang dibuat di lokal ke default branch main
+Merge branch readme yang dibuat di lokal ke default branch main
 ![praktik 2 (13).png](https://www.dropbox.com/s/e9vcmx31mhjnfp9/praktik%202%20%2813%29.png?dl=0&raw=1)
 ![praktik 2 (14).png](https://www.dropbox.com/s/28sjxgqe5t16g09/praktik%202%20%2814%29.png?dl=0&raw=1)
 
 Repo setelah Merge
 ![praktik 2 (15).png](https://www.dropbox.com/s/1nua9seho4htvnl/praktik%202%20%2815%29.png?dl=0&raw=1)
 
-Dan Commit setelah branch readme ke default branch main (merge)
+Dan Commit setelah Merge branch readme ke default branch main (merge)
 ![praktik 2 (16).png](https://www.dropbox.com/s/nuj4tabd1v731ov/praktik%202%20%2816%29.png?dl=0&raw=1)
