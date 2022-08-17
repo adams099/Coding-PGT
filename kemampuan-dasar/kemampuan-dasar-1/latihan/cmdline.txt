@@ -133,10 +133,10 @@ The current time is: 11:37:48,29
 Enter the new time:
 
 ============================================================================================================
-8) echo menampilkan pesan pada layar CMD
+8) whoami memeriksa nama user yang menjalankan skrip
 
-C:\WINDOWS\system32>echo
-ECHO is on.
+C:\WINDOWS\system32>whoami
+laptop-dams\user
 
 ============================================================================================================
 9) help menampilkan fungsi-fungsi pda CMD
@@ -256,11 +256,10 @@ C:\WINDOWS\system32>vol
  Volume Serial Number is 146A-666B
 
 ============================================================================================================
-12) whoami memeriksa nama user yang menjalankan skrip
+12) echo menampilkan pesan pada layar CMD
 
-C:\WINDOWS\system32>whoami
-laptop-dams\user
-
+C:\WINDOWS\system32>echo
+ECHO is on.
 ============================================================================================================
 13) cmdkey /list melihat daftar username/ password milik user
 

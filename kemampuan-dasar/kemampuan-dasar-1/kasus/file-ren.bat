@@ -1,7 +1,6 @@
 @echo off
 title CODING PGT
 
-cls
 echo.
 for /f "tokens=*" %%I in ('dir /b /s *.java') do (
 if exist dir /b /s *.java (
@@ -11,12 +10,11 @@ echo Ada File Java Pada Direktori :
 echo %%I
 goto pilihan
 )
-)
+
 if %errorlevel% == 0 (
 echo msgbox "Tidak Ditemukan File Java Pada Direktori" > "%temp%\popup.vbs"
 wscript.exe "%temp%\popup.vbs"
 goto exit
-)
 )
 
 :pilihan
