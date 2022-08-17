@@ -21,7 +21,7 @@ Ilmu komputer adalah studi tentang teori, eksperimen, dan rekayasa yang membentu
 #### Informatika
 Informatika adalah cabang dari rekayasa informasi. Ini melibatkan praktik pemrosesan informasi dan rekayasa sistem informasi. Sebagai bidang akademik, ini adalah bentuk terapan dari ilmu informasi menyebabkan studi informatika dengan computational, matematika, biologi, cognitive dan social aspects, termasuk studi tentang dampak sosial dari teknologi informasi.
 
-> Kesimpulanya Ilmu komputer adalah studi tentang komputer dan Informatika adalah studi menggunakan komputer
+> Kesimpulannya Ilmu komputer adalah studi tentang komputer dan Informatika adalah studi menggunakan komputer
 [sources](https://cs.stackexchange.com/questions/81408/whats-the-difference-between-computer-science-and-informatics)
 
 
